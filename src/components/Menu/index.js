@@ -15,6 +15,8 @@ import { RiArrowLeftRightLine } from 'react-icons/ri'
 
 import './styles.less'
 
+import PropTypes from 'prop-types'
+
 export default function Menu() {
   const MENU = [
     {
@@ -96,6 +98,7 @@ export default function Menu() {
             title={item.title}
             icon={item.icon}
             className="menu-item"
+            disabled
           >
             {item.title}{' '}
             <Tag color="#000" title="Pro">
@@ -115,4 +118,8 @@ export default function Menu() {
       )}
     </AntMenu>
   )
+}
+
+Menu.propTypes = {
+  isCollapsed: PropTypes.bool,
 }

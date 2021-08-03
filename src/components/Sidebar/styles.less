@@ -1,25 +1,22 @@
-.sidebar {
-  position: relative;
-  height: 100%;
-  overflow-y: auto;
-  width: 100%;
+.ant-layout-sider.sidebar {
+  background-color: var(--sidebar-background, grey);
+  overflow: auto;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  display: inline-block;
+  font-size: 0;
 
-  .sidebar-inner {
-    background-color: var(--sidebar-background, grey);
-    position: sticky;
-    top: 0;
+  .logo img {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
 
-    .logo img {
-      max-width: 100%;
-      margin-bottom: 40px;
-    }
-
-    .sidebar-footer {
-      margin-top: 50px;
-      color: gray;
-      font-size: 0.9rem;
-      padding-left: 1.5rem;
-      padding-bottom: 1rem;
-    }
+  .sidebar-footer {
+    margin-top: 50px;
+    color: gray;
+    font-size: 0.9rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
   }
 }
