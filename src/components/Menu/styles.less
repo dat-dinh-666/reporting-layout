@@ -1,0 +1,24 @@
+.ant-menu.menu {
+  font-size: 1rem;
+  background-color: var(--sidebar-background);
+
+  .menu-item {
+    color: gray;
+    .ant-menu-item-icon {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+  }
+  .menu-item.ant-menu-item-selected,
+  .menu-item.ant-menu-item-active {
+    color: black;
+    background-color: var(--light-gray);
+  }
+  // REMOVE RIGHT BLUE BORDER OF ANT
+  .menu-item.ant-menu-item::after,
+  .menu-item.ant-menu-item::after,
+  .menu-item.ant-menu-item::after,
+  .menu-item.ant-menu-inline .ant-menu-item::after {
+    opacity: 0;
+  }
+}
