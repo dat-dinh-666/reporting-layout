@@ -7,7 +7,7 @@ const { useBreakpoint } = Grid
 export default function useDevice() {
   const screens = useBreakpoint()
 
-  const device = useRef('desktop')
+  const device = useRef('')
 
   useEffect(() => {
     const breakPoints = Object.entries(screens)

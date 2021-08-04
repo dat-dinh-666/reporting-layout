@@ -2,13 +2,20 @@ import React from 'react'
 
 import { Layout } from 'antd'
 import Sidebar from '../Sidebar'
+import useDevice from '../../hooks/useDevice'
 
 export default function Desktop() {
+  const { device } = useDevice()
+
+  const isMobile = device === 'mobile'
+
   return (
     <Layout>
       <Layout>
         <Sidebar />
-        <Layout.Content style={{ height: '1000vh', marginLeft: 120 }}>
+        <Layout.Content
+          style={{ height: '1000vh', marginLeft: isMobile ? 0 : 120 }}
+        >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ratione
           laudantium, blanditiis possimus fugit deleniti! Ad blanditiis tenetur
           eaque voluptates facere id qui porro at aspernatur ipsa sit non fugiat

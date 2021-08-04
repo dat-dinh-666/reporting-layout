@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 import SidebarButtons from '../SidebarButtons'
 
 import { Layout } from 'antd'
+import useDevice from '../../hooks/useDevice'
 
 export default function Sidebar({ logoUrl }) {
   const { Sider } = Layout
@@ -31,8 +32,15 @@ export default function Sidebar({ logoUrl }) {
     }
   }, [isCollapsed])
 
-  return (
-    // !TODO CHANGE WIDTH WHEN IPSECT DESIN
+  const { device } = useDevice()
+  const isMobile = device === 'mobile'
+
+  // !TODO CHANGE WIDTH WHEN IPSECT DESIGN
+  return isMobile ? (
+    <>
+      <Menu />
+    </>
+  ) : (
     <Sider
       className="sidebar"
       width="250px"
@@ -50,7 +58,7 @@ export default function Sidebar({ logoUrl }) {
           alt="Logo"
         />
       </div>
-      <Menu isCollapsed={isCollapsed} />
+      <Menu />
       <SidebarButtons />
       <div className="sidebar-footer">
         <p>ISC-CX &copy; {new Date().getFullYear()}</p>

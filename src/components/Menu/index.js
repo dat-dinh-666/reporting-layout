@@ -1,5 +1,4 @@
 import React from 'react'
-import { Menu as AntMenu, Tag } from 'antd'
 
 import { MdCheck, MdTrendingUp, MdArrowForward } from 'react-icons/md'
 import { TiDocumentText } from 'react-icons/ti'
@@ -15,8 +14,14 @@ import { RiArrowLeftRightLine } from 'react-icons/ri'
 
 import './styles.less'
 
-import PropTypes from 'prop-types'
 import useDevice from '../../hooks/useDevice'
+import VerticalMenu from './VerticalMenu'
+import HorizontalMenu from './HorizontalMenu'
+
+const COLORS = {
+  new: '#3aa600',
+  pro: '#000',
+}
 
 export default function Menu() {
   const MENU = [
@@ -79,51 +84,12 @@ export default function Menu() {
   ]
 
   const { device } = useDevice()
-  const isTablet = device === 'tablet'
+  const isDesktop = device === 'desktop'
+  const isMobile = device === 'mobile'
 
-  return (
-    <AntMenu mode="inline" className="menu">
-      {MENU.map((item, i) =>
-        i === 12 ? (
-          <AntMenu.Item
-            key={i + 1}
-            title={item.title}
-            icon={item.icon}
-            className="menu-item"
-          >
-            {item.title}{' '}
-            <Tag color="#3aa600" title="New">
-              {isTablet ? '!' : 'New'}
-            </Tag>
-          </AntMenu.Item>
-        ) : i === 13 ? (
-          <AntMenu.Item
-            key={i + 1}
-            title={item.title}
-            icon={item.icon}
-            className="menu-item"
-            disabled
-          >
-            {item.title}{' '}
-            <Tag color="#000" title="Pro">
-              {isTablet ? '!' : 'Pro'}
-            </Tag>
-          </AntMenu.Item>
-        ) : (
-          <AntMenu.Item
-            key={i + 1}
-            title={item.title}
-            icon={item.icon}
-            className="menu-item"
-          >
-            {item.title}
-          </AntMenu.Item>
-        )
-      )}
-    </AntMenu>
+  return isMobile ? (
+    <HorizontalMenu menu={MENU} />
+  ) : (
+    <VerticalMenu menu={MENU} isDesktop={isDesktop} colors={COLORS} />
   )
-}
-
-Menu.propTypes = {
-  isCollapsed: PropTypes.bool,
 }
