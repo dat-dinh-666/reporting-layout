@@ -16,6 +16,7 @@ import { RiArrowLeftRightLine } from 'react-icons/ri'
 import './styles.less'
 
 import PropTypes from 'prop-types'
+import useDevice from '../../hooks/useDevice'
 
 export default function Menu() {
   const MENU = [
@@ -77,6 +78,9 @@ export default function Menu() {
     },
   ]
 
+  const { device } = useDevice()
+  const isTablet = device === 'tablet'
+
   return (
     <AntMenu mode="inline" className="menu">
       {MENU.map((item, i) =>
@@ -89,7 +93,7 @@ export default function Menu() {
           >
             {item.title}{' '}
             <Tag color="#3aa600" title="New">
-              New
+              {isTablet ? '!' : 'New'}
             </Tag>
           </AntMenu.Item>
         ) : i === 13 ? (
@@ -102,7 +106,7 @@ export default function Menu() {
           >
             {item.title}{' '}
             <Tag color="#000" title="Pro">
-              Pro
+              {isTablet ? '!' : 'Pro'}
             </Tag>
           </AntMenu.Item>
         ) : (
