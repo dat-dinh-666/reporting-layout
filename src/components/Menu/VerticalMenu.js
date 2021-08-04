@@ -6,14 +6,14 @@ import PropTypes from 'prop-types'
 
 export default function VerticalMenu({ menu, isDesktop, colors }) {
   return (
-    <Menu mode="inline" className="menu" multiple>
+    <Menu mode="inline" className="vertical-menu" multiple>
       {menu.map((item, i) =>
         i === 12 ? (
           <Menu.Item
             key={i + 1}
             title={item.title}
             icon={item.icon}
-            className="menu-item"
+            className="vertical-menu-item"
           >
             {item.title}{' '}
             <Tag color={colors.new} title="New">
@@ -25,7 +25,7 @@ export default function VerticalMenu({ menu, isDesktop, colors }) {
             key={i + 1}
             title={item.title}
             icon={item.icon}
-            className="menu-item"
+            className="vertical-menu-item"
             disabled
           >
             {item.title}{' '}
@@ -38,7 +38,7 @@ export default function VerticalMenu({ menu, isDesktop, colors }) {
             key={i + 1}
             title={item.title}
             icon={item.icon}
-            className="menu-item"
+            className="vertical-menu-item"
           >
             {item.title}
           </Menu.Item>

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useState } from 'react'
 
 import { Grid } from 'antd'
 
@@ -7,7 +7,7 @@ const { useBreakpoint } = Grid
 export default function useDevice() {
   const screens = useBreakpoint()
 
-  const device = useRef('')
+  const [device, setDevice] = useState('desktop')
 
   useEffect(() => {
     const breakPoints = Object.entries(screens)
@@ -15,13 +15,13 @@ export default function useDevice() {
       .map((screen) => screen[0])
 
     if (breakPoints.includes('xs')) {
-      device.current = 'mobile'
+      setDevice('mobile')
     } else if (breakPoints.includes('xl')) {
-      device.current = 'desktop'
+      setDevice('desktop')
     } else {
-      device.current = 'tablet'
+      setDevice('tablet')
     }
   }, [screens])
 
-  return { device: device.current }
+  return { device }
 }

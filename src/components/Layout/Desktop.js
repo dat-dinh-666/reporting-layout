@@ -14,7 +14,11 @@ export default function Desktop() {
       <Layout>
         <Sidebar />
         <Layout.Content
-          style={{ height: '1000vh', marginLeft: isMobile ? 0 : 120 }}
+          style={{
+            height: '1000vh',
+            marginLeft: isMobile ? 0 : 120,
+            marginTop: isMobile ? 64 : 0,
+          }}
         >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ratione
           laudantium, blanditiis possimus fugit deleniti! Ad blanditiis tenetur

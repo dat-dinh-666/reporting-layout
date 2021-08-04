@@ -1,47 +1,99 @@
-.ant-menu.menu {
+.ant-menu.vertical-menu {
   font-size: 1rem;
   background-color: var(--sidebar-background);
 
-  .menu-item {
+  .vertical-menu-item {
     color: gray;
     .ant-menu-item-icon {
       width: 1.25rem;
       height: 1.25rem;
     }
   }
-  .menu-item.ant-menu-item-selected,
-  .menu-item.ant-menu-item-active {
+  .vertical-menu-item.ant-menu-item-selected,
+  .vertical-menu-item.ant-menu-item-active {
     color: black;
     background-color: var(--light-gray);
   }
   // REMOVE RIGHT BLUE BORDER OF ANT
-  .menu-item.ant-menu-item::after,
-  .menu-item.ant-menu-item::after,
-  .menu-item.ant-menu-item::after,
-  .menu-item.ant-menu-inline .ant-menu-item::after {
+  .vertical-menu-item.ant-menu-item::after,
+  .vertical-menu-item.ant-menu-item::after,
+  .vertical-menu-item.ant-menu-item::after,
+  .vertical-menu-item.ant-menu-inline .ant-menu-item::after {
     opacity: 0;
   }
 }
 
-.ant-carousel .horizontal-menu {
-  overflow: hidden;
-  .slick-prev,
-  .slick-next,
-  .slick-prev:hover,
-  .slick-next:hover,
-  .slick-prev:focus,
-  .slick-next:focus {
-    font-size: inherit;
-    color: currentColor;
-  }
+.ant-layout-header.horizontal-menu-container {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  padding-left: 0;
+  padding-right: 0;
 
-  .slick-prev {
-    left: 0;
-  }
-  .slick-next {
-    right: 0;
-  }
+  .ant-carousel .horizontal-menu {
+    .slick-prev,
+    .slick-next {
+      z-index: 1;
+      top: 0;
+      bottom: 0;
+      height: auto;
+      width: 2rem;
+      div {
+        height: calc(100% + 10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+          width: 80%;
+          height: 80%;
+        }
+      }
+    }
 
-  .horizontal-menu-item {
+    .slick-prev,
+    .slick-next,
+    .slick-prev:hover,
+    .slick-next:hover,
+    .slick-prev:focus,
+    .slick-next:focus {
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.773546918767507) 0%,
+        rgba(255, 255, 255, 1) 100%
+      );
+      background: linear-gradient(#fff);
+      font-size: inherit;
+      color: currentColor;
+    }
+
+    .slick-prev.slick-disabled,
+    .slick-next.slick-disabled {
+      opacity: 0;
+    }
+
+    .slick-prev {
+      left: 0;
+    }
+    .slick-next {
+      right: 0;
+    }
+
+    .horizontal-menu-item {
+      font-size: 1rem;
+      height: 4rem;
+      line-height: 4rem;
+      text-align: center;
+      cursor: pointer;
+      color: gray;
+
+      &.horizontal-menu-item-active {
+        color: #000;
+        font-weight: 500;
+        border-bottom: 2px solid #000;
+      }
+    }
   }
 }
