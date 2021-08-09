@@ -1,0 +1,95 @@
+@import "compass";
+
+
+$base-font-size: 11px;
+$base-line-height: 14px;
+
+/* Large desktop */
+@media (min-width: 1024px) { 
+
+	.box-menu.xl .box-menu-filters > li {margin-right: 30px;}
+
+
+	#compareNav {
+		ul {
+			width: 3160px;
+			li {
+				width: 158px;
+			}
+		}
+	}
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+
+	.app-header { 
+		h1 {@include adjust-font-size-to(42px, 3.5);}
+	}
+
+	#compareNav {
+		ul {
+			width: 3240px;
+			li {
+				width: 162px;
+			}
+		}
+	}
+
+ }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+	
+	.app-header { 
+		h1 {@include adjust-font-size-to(35px, 3.5);}
+	}
+	
+
+	.box-menu.xl {
+		button {margin: 10px 10px 0 10px;}
+
+		.box-menu-actions {
+			float: left;
+			border: 0;
+		}
+
+		.box-menu-filters {margin-right: 10px;}
+	} 
+
+	.overview {
+		.score_total .value {@include adjust-font-size-to(32px, 4);}
+		.score_since .value {font-size: $base-font-size * 1.5;}
+	}
+
+	.discounts {
+		.total, .last {margin: 0 2%;}
+		.value {font-size: 60px; line-height: 74px;}
+	}
+
+	#cso .box-full .table .month {display: block;}
+
+
+	#time .box-full .box-menu .box-menu-actions {border: 0;}
+
+	.time-table-nav {display: block;}
+
+	#timeTable { 
+		th, td {width:7%;}
+		th:nth-child(n+7):nth-child(-n+9), td:nth-child(n+7):nth-child(-n+9) {width:0;}
+		th:nth-child(n+4):nth-child(-n+6), td:nth-child(n+4):nth-child(-n+6) {width:8%;}
+	}
+
+	#timeTable.nextColumns { 
+		th:nth-child(n+7):nth-child(-n+9), td:nth-child(n+7):nth-child(-n+9) {width:8%;}
+		th:nth-child(n+4):nth-child(-n+6), td:nth-child(n+4):nth-child(-n+6) {width:0;}
+	}
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+
+
+
+}

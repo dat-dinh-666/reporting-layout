@@ -1,0 +1,64 @@
+CACHE MANIFEST
+
+# Time: Sat Jan 19 2013 15:32:49 GMT+0100 (CET)
+# This manifest was created by confess.js, http://github.com/jamesgpearce/confess
+#
+# Retrieved URL: http://localhost:3501/
+# User-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.12 Safari/535.11
+#
+# Config:
+#  task: appcache
+#  userAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.12 Safari/535.11
+#  wait: 0
+#  consolePrefix: #
+#  verbose: true
+#  appcache:
+#   urlsFromDocument: true
+#   urlsFromRequests: false
+#   cacheFilter: .*
+#   networkFilter: null
+#  url: http://localhost:3501
+#  configFile: /usr/local/lib/node_modules/yeoman/lib/support/confess.json
+
+CACHE:
+http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js
+http://localhost:3501/styles/_default/blank.gif
+http://localhost:3501/styles/_default/images/ClientBased/bg-body.jpg
+http://localhost:3501/styles/_default/images/ClientBased/bg-box.jpg
+http://localhost:3501/styles/_default/images/ClientBased/box-title.png
+http://localhost:3501/styles/_default/images/fancybox/fancybox_loading.gif
+http://localhost:3501/styles/_default/images/fancybox/fancybox_overlay.png
+http://localhost:3501/styles/_default/images/fancybox/fancybox_sprite.png
+http://localhost:3501/styles/_default/images/icons/boxicon-s08b5afb134.png
+http://localhost:3501/styles/_default/images/icons/flags-s06e67cf988.png
+http://localhost:3501/styles/_default/images/icons/icons-general-sc1b8b17fd7.png
+http://localhost:3501/styles/_default/images/icons/mainnav-s6e0c8f5f0e.png
+http://localhost:3501/styles/_default/images/loader.gif
+scripts/main.js
+scripts/plugins.js
+scripts/vendor/modernizr.min.js
+styles/_default/images/ClientBased/generic_logo.png
+styles/_default/images/isc.png
+styles/_default/images/temp/cso-chart-1.png
+styles/_default/images/temp/cso-chart-2.png
+styles/_default/images/temp/cso-chart-3.png
+styles/_default/images/temp/gallery/large/1.jpg
+styles/_default/images/temp/gallery/small/1.jpg
+styles/_default/images/temp/gallery/small/2.jpg
+styles/_default/images/temp/gallery/small/3.jpg
+styles/_default/images/temp/manager.jpg
+styles/_default/images/temp/service-charts-1.jpg
+styles/_default/images/temp/service-charts-2.jpg
+styles/_default/images/temp/service-charts-3.jpg
+styles/_default/images/temp/service-charts-4.jpg
+styles/_default/images/temp/service-charts-5.jpg
+styles/_default/images/temp/service-charts-6.jpg
+styles/_default/images/temp/trends-chart-1.jpg
+styles/_default/images/temp/trends-chart-2.jpg
+styles/_default/images/temp/world-map-legend.png
+styles/_default/images/temp/world-map.png
+styles/_default/main.css
+styles/_default/main_rtl.css
+
+NETWORK:
+*

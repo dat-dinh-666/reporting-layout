@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=no-js> <!--<![endif]-->
+<head>
+  <meta charset=utf-8>
+  <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+  <title></title>
+  <meta name=description content="">
+  <meta name=viewport content="width=device-width">
+
+  <link rel=stylesheet href="styles/_default/main.css">
+
+  <script src="scripts/vendor/modernizr.min.js"></script>
+
+<body>
+  <div id=app>
+    <header class=app-header>
+      <div class=brand>
+        <a href=index.html>
+          <h1><img src="styles/_default/images/isc.png" alt="International Service Check"><span>LiveView</span></h1>
+        </a>
+        <time datetime="2012-12-12 21:03">Monday 12 december 2012 @ 21:03</time>
+      </div>
+      <div class=overview>
+        <img src="styles/_default/images/ClientBased/generic_logo.png" alt="Generic Logo">
+        <p class=score_total>
+          <span class=name>Total Score</span>
+          <span class=value>94.3%</span>
+        </p>
+        <div class=score_since>
+          <div>
+            <span class=name>Since Last Visit</span>
+            <span class="value up">-1.1% <i class=dir></i></span>
+          </div>
+          <div>
+            <span class=name>Since Last Sycle</span>
+            <span class="value down">+2.5% <i class=dir></i></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class=navigation>
+      <nav id=main-nav>
+        <div class=nav-wrapper>
+          <ul>
+            <li><a href=trends.html><i class=mainnav-trends></i>trends</a></li>
+            <li><a href=act.html><i class=mainnav-act></i>act</a></li>
+            <li><a href=checks.html><i class=mainnav-checks></i>checks</a></li>
+            <li><a href=service.html><i class=mainnav-service></i>service</a></li>
+            <li><a href=compare.html><i class=mainnav-compare></i>compare</a></li>
+            <li><a href="#"><i class=mainnav-evaluation></i>evaluation</a></li>
+            <li><a href=cso.html><i class=mainnav-cso></i>cso</a></li>
+            <li><a href=result.html><i class=mainnav-result></i>result</a></li>
+            <li><a href=score.html><i class=mainnav-score></i>score</a></li>
+            <li><a href=analysis.html><i class=mainnav-analysis></i>analysis</a></li>
+            <li><a href=time.html><i class=mainnav-time></i>time</a></li>
+            <li><a href=discount.html><i class=mainnav-discount></i>discount</a></li>
+            <li><a href=documents.html><i class=mainnav-documents></i>documents</a></li>
+            <li><a href=inquiry.html><i class=mainnav-inquiry></i>inquiry</a></li>
+            <li><a href=world-map.html class=active><i class=mainnav-map></i>map</a></li>
+            <li><a href=images.html><i class=mainnav-images></i>images</a></li>
+          </ul>
+          <select name=mini-nav id=mini-nav>
+            <option value=index.html selected>- select -
+            <option value=index.html>home
+            <option value=trends.html>trends
+            <option value=act.html>act
+            <option value=checks.html>checks
+            <option value=service.html>service
+            <option value=compare.html>compare
+            <option value="#">evaluation
+            <option value=cso.html>cso
+            <option value=result.html>result
+            <option value=score.html>score
+            <option value=analysis.html>analysis
+            <option value=time.html>time
+            <option value=discount.html>discount
+            <option value=documents.html>documents
+            <option value=inquiry.html>inquiry
+            <option value=world-map.html>map
+            <option value=images.html>images
+          </select>
+        </div>
+        <a href="#" class=nav-more title=more><span></span>more</a>
+        <button class=nav-settings title=settings><span></span></button>
+      </nav>
+    </div>
+    
+    <div class=breadcrumbs>
+      <ul class=path>
+        <li><a href="#">World</a></li>
+        <li><a href="#">Europe</a></li>
+        <li class="path-more dropdown">
+          <a class=dropdown-toggle href="#">Germany <b class=caret></b></a>
+          <ul id=menu1 class=dropdown-menu>
+            <li><a tabindex=-1 href="#">Berlin</a></li>
+            <li><a tabindex=-1 href="#">Hamburg</a></li>
+            <li><a tabindex=-1 href="#">Hesse</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="period dropdown">
+        <a class=dropdown-toggle href="#"><span>1 (2012/2013)</span> <b class=caret></b></a>
+        <ul id=cycleSum class="dropdown-menu pull-right">
+          <li class=active><a tabindex=-1 href="#">1 (2012/2013)</a></li>
+          <li><a tabindex=-1 href="#">2 (2011/2012)</a></li>
+          <li><a tabindex=-1 href="#">3 (2010/2011)</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div id=locationMap class=box>
+      <div class=box-header>
+        <div class=box-actions>
+          <button type=button class=help></button>
+          <button type=button class=maxsize></button>
+        </div>
+        <h2><i class=boxicon-map2></i><span>Map Check</span></h2>
+      </div>
+
+      <div class=box-teaser>
+
+        <div class=maps>
+          <div class=location-map>
+            <a href="#"><img src="styles/_default/images/temp/location-map.jpg" alt="Location Map"></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class=box-full>
+        <div class=box-menu>
+          <button class=refresh></button>
+          <div class=box-menu-actions>
+            <button type=button class=fullsize></button>
+            <button type=button class=settings></button>
+            <button type=button class=send></button>
+          </div>
+          <ul class=box-menu-filters>
+            <li><a href="#" class=add-location><span>Location</span><span>Set</span></a></li>
+            <li class="dropdown dropup"><a href="#"><span>Cycle From</span><span>2 (2011/2012)</span><b class=caret></b></a></li>
+            <li class="dropdown dropup"><a href="#"><span>Cycle To</span><span>2 (2011/2012)</span><b class=caret></b></a></li>
+            <li class="dropdown dropup">
+              <a class=dropdown-toggle href="#"><span>Criteria</span><span>Total</span><b class=caret></b></a>
+              <ul id=critetia class=dropdown-menu>
+                <li class=active><a tabindex=-1 href="#">1 Total</a></li>
+                <li><a tabindex=-1 href="#">2 Total</a></li>
+                <li><a tabindex=-1 href="#">3 Total</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+ </div>
+
+ <div id=add-location class=modal>
+   <form action="">
+     <label for=addLocation>Location</label>
+     <input id=addLocation placeholder="Type a location…">
+
+     <label for=addCity>City</label>
+     <input id=addCity placeholder="Type a city...">
+
+     <label for=addPostal>Postal</label>
+     <input id=addPostal placeholder="Type a postal code…">
+
+     <input type=submit value="Set location" id=set-location>
+   </form>
+ </div>
+
+ <div id=location-info class=modal>
+   <h3>73728 Esslingen - (D) - Berlinerstr. 2</h3>
+   <div class=location-info>
+     <p><span>Location</span>  <span class=location>No. 488</span></p>
+     <p><span>City</span>      <span class=addressLocality>Esslingena</span></p>
+     <p><span>Street</span>    <span class=streetAddress>Berlinerstr. 2</span></p>
+     <p><span>Postal Code</span><span class=postalCode> 73728</span></p>
+   </div>
+
+   <table id=locationInfoTable class="table stripped">
+     <thead>
+       <tr>
+         <th>Cycle</th>
+         <th>Check No</th>
+         <th>Check Date</th>
+         <th>Total</th>
+         <th></th>
+       
+     
+     <tbody>
+       <tr>
+         <td>1 (2012/13)</td>
+         <td>4425062</td>
+         <td>15/10/2012</td>
+         <td class=up><span class=value>100%</span></td>
+         <td><button type=button class=open-att></button></td>
+       
+       <tr>
+         <td>6 (2011/12)</td>
+         <td>4305858</td>
+         <td>07/08/2012</td>
+         <td class=up><span class=value>93.5%</span></td>
+         <td><button type=button class=open-att></button></td>
+       
+       <tr>
+         <td>5 (2012/13)</td>
+         <td>4425062</td>
+         <td>15/10/2012</td>
+         <td class=up><span class=value>100%</span></td>
+         <td><button type=button class=open-att></button></td>
+       
+       <tr>
+         <td>4 (2012/13)</td>
+         <td>4425062</td>
+         <td>15/10/2012</td>
+         <td class=up><span class=value>100%</span></td>
+         <td><button type=button class=open-att></button></td>
+       
+     
+   </table>
+ </div>
+
+
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+            <![endif]-->
+
+            <!-- Add your site or application content here -->
+
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="scripts/vendor/jquery.min.js"><\/script>')</script>
+
+            <script src="scripts/plugins.js"></script>
+
+            <script src="scripts/main.js"></script>
