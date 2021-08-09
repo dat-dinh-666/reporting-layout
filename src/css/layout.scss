@@ -1,0 +1,13 @@
+.layout {
+  display: flex;
+}
+
+.sidebar {
+  order: -1;
+  flex-basis: 300px;
+}
+
+.main {
+  order: 1;
+  flex-basis: calc(100% - 300px);
+}
