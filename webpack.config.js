@@ -10,7 +10,7 @@ const { extendDefaultPlugins } = require("svgo");
 const environment = require("./config/env");
 
 const templateFiles = fs
-  .readdirSync(environment.paths.source)
+  .readdirSync(path.resolve(__dirname, "./"))
   .filter((file) => path.extname(file).toLowerCase() === ".html");
 
 const htmlPluginEntries = templateFiles.map(
@@ -19,7 +19,7 @@ const htmlPluginEntries = templateFiles.map(
       inject: true,
       hash: false,
       filename: template,
-      template: path.resolve(environment.paths.source, template),
+      template: path.resolve(__dirname, template),
     })
 );
 
@@ -48,19 +48,6 @@ module.exports = {
         use: ["babel-loader"],
       },
       {
-        test: /\.(png|gif|jpe?g|svg)$/i,
-        use: [
-          {
-            loader: "url-loader",
-            options: {
-              name: "images/design/[name].[hash:6].[ext]",
-              publicPath: "../",
-              limit: environment.limits.images,
-            },
-          },
-        ],
-      },
-      {
         test: /\.(eot|ttf|woff|woff2)$/,
         use: [
           {
@@ -79,38 +66,15 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "css/[name].css",
     }),
-    // new ImageMinimizerPlugin({
-    //   test: /\.(jpe?g|png|gif|svg)$/i,
-    //   minimizerOptions: {
-    //     // Lossless optimization with custom option
-    //     // Feel free to experiment with options for better result for you
-    //     plugins: [
-    //       ["gifsicle", { interlaced: true }],
-    //       ["jpegtran", { progressive: true }],
-    //       ["optipng", { optimizationLevel: 5 }],
-    //       [
-    //         "svgo",
-    //         {
-    //           plugins: extendDefaultPlugins([
-    //             {
-    //               name: "removeViewBox",
-    //               active: false,
-    //             },
-    //           ]),
-    //         },
-    //       ],
-    //     ],
-    //   },
-    // }),
-    // new CleanWebpackPlugin({
-    //   verbose: true,
-    //   cleanOnceBeforeBuildPatterns: ["**/*", "!stats.json"],
-    // }),
+    new CleanWebpackPlugin({
+      verbose: true,
+      cleanOnceBeforeBuildPatterns: ["**/*", "!stats.json"],
+    }),
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(environment.paths.source, "images", "content"),
-          to: path.resolve(environment.paths.output, "images", "content"),
+          from: path.resolve(__dirname, "assets"),
+          to: path.resolve(environment.paths.output, "assets"),
           toType: "dir",
           globOptions: {
             ignore: ["*.DS_Store", "Thumbs.db"],
