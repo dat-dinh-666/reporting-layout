@@ -5,3 +5,4 @@ import "@fortawesome/fontawesome-free/js/brands";
 
 import "./index.scss";
 import "./script/sidebar";
+import "./script/modal";

@@ -5,15 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Reporting Layout</title>
     <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="dist/css/app.css" />
+    <link rel="stylesheet" href="/css-var.css" />
   </head>
 
   <body>
@@ -21,43 +20,44 @@
       <div class="layout">
         <div class="main">
           <header class="app-header">
-            <div class="brand">
-              <a href="./index.html">
-                <h1>
-                  <img
-                    src="assets/images/isc.png"
-                    alt="International Service Check"
-                  /><span>LiveBoard</span>
-                </h1>
-              </a>
-              <time datetime="2012-12-12 21:03"
-                >Monday 12 december 2012 @ 21:03</time
-              >
-            </div>
             <div class="overview">
-              <img
-                src="assets/images/ClientBased/generic_logo.png"
-                alt="Generic Logo"
-              />
+              <img class="logo" src="assets/images/ClientBased/generic_logo.png" alt="Generic Logo">
               <div class="score_total">
-                <span class="name">Total Score</span>
-                <span class="value">94.3%</span>
+                <div class="name">Total</div>
+                <div class="value">94.3%</div>
               </div>
               <div class="score_since">
-                <div>
-                  <span class="name">Since Last Visit</span>
-                  <span class="value up">-1.1% <i class="dir"></i></span>
+                <div class="login">
+                  <span class="value down">
+                    <span>1.1% </span>
+                    <i class="fas fa-long-arrow-alt-down"></i>
+                  </span>
+                  <span class="name">Since Last Login</span>
                 </div>
-                <div>
+                <div class="cycle">
+                  <span class="value up">
+                    <span>2.5% </span>
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </span>
                   <span class="name">Since Last Sycle</span>
-                  <span class="value down">+2.5% <i class="dir"></i></span>
                 </div>
               </div>
-            </div>
+              <time datetime="2012-12-12 21:03">Monday 12 December 2012 @ 21:03</time>
+              <div class="account" data-micromodal-trigger="modal-user">
+                <div class="user">
+                  <button>
+                    <i class="far fa-user"></i>
+                  </button>
+                </div>
+                <div class="filter">
+                  Presentation of Program
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </div>
           </header>
 
-          <div class="navigation">
-            <nav id="main-nav">
+          <!-- <nav class="navigation">
+            <div id="main-nav">
               <div class="nav-wrapper">
                 <ul>
                   <li>
@@ -126,10 +126,10 @@
               <button class="nav-settings" title="settings">
                 <span></span>
               </button>
-            </nav>
-          </div>
+            </div>
+          </nav> -->
 
-          <div class="breadcrumbs">
+          <section class="breadcrumbs">
             <ul class="path">
               <li><a href="#">World</a></li>
               <li><a href="#">Europe</a></li>
@@ -160,9 +160,9 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div id="trends" class="box">
+          <section id="trends" class="box">
             <div class="box-header">
               <div class="box-actions">
                 <button type="button" class="help"></button>
@@ -323,9 +323,9 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div id="act" class="box">
+          <section id="act" class="box">
             <div class="box-header">
               <div class="box-actions">
                 <button type="button" class="help"></button>
@@ -569,9 +569,9 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div id="checks" class="box">
+          <section id="checks" class="box">
             <div class="box-header">
               <div class="box-actions">
                 <button type="button" class="help"></button>
@@ -813,9 +813,9 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div id="service" class="box">
+          <section id="service" class="box">
             <div class="box-header">
               <div class="box-actions">
                 <button type="button" class="help"></button>
@@ -925,9 +925,9 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div id="compare" class="box">
+          <section id="compare" class="box">
             <div class="box-header">
               <div class="box-actions">
                 <button type="button" class="help"></button>
@@ -1444,9 +1444,9 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div id="cso" class="box">
+          <section id="cso" class="box">
             <div class="box-header">
               <div class="box-actions">
                 <button type="button" class="help"></button>
@@ -1818,9 +1818,9 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div id="result" class="box2">
+          <section id="result" class="box2">
             <div class="box-header">
               <div class="box-actions">
                 <button type="button" class="help"></button>
@@ -1980,9 +1980,9 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div id="score" class="box2">
+          <section id="score" class="box2">
             <div class="box-header">
               <div class="box-actions">
                 <button type="button" class="help"></button>
@@ -2074,9 +2074,9 @@
                 </article>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div id="analysis" class="box">
+          <section id="analysis" class="box">
             <div class="box-header">
               <div class="box-actions">
                 <button type="button" class="help"></button>
@@ -2363,9 +2363,9 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div id="time" class="box2">
+          <section id="time" class="box2">
             <div class="box-header">
               <div class="box-actions">
                 <button type="button" class="help"></button>
@@ -2779,9 +2779,9 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div id="discount" class="box">
+          <section id="discount" class="box">
             <div class="box-header">
               <div class="box-actions">
                 <button type="button" class="help"></button>
@@ -3210,9 +3210,9 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div id="documents" class="box">
+          <section id="documents" class="box">
             <div class="box-header">
               <div class="box-actions">
                 <button type="button" class="help"></button>
@@ -3373,9 +3373,9 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div id="inquiry" class="box">
+          <section id="inquiry" class="box">
             <div class="box-header">
               <div class="box-actions">
                 <button type="button" class="help"></button>
@@ -3543,9 +3543,9 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div id="worldMap" class="box2">
+          <section id="worldMap" class="box2">
             <div class="box-header">
               <div class="box-actions">
                 <button type="button" class="help"></button>
@@ -3609,9 +3609,9 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div id="images" class="box2">
+          <section id="images" class="box2">
             <div class="box-header">
               <div class="box-actions">
                 <button type="button" class="help"></button>
@@ -3741,9 +3741,9 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div id="contact" class="box">
+          <secion id="contact" class="box">
             <div class="box-header">
               <div class="box-actions">
                 <button type="button" class="help"></button>
@@ -3769,7 +3769,7 @@
                 Please feel free to contact me with any questions.
               </p>
             </div>
-          </div>
+          </seci>
 
           <footer id="app-footer">
             <p class="copyright">International Service Check &copy; 2012</p>
@@ -3914,6 +3914,22 @@
             <time datetime="2012-02-17 09:00">10 September</time>
           </footer>
         </blockquote>
+      </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-user" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+          <header class="modal__header">
+            <h2 class="modal__title" id="modal-user-title">
+              User Modal
+            </h2>
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+          </header>
+          <main class="modal__content" id="modal-user-content">
+              Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal.
+          </main>
+        </div>
       </div>
     </div>
 

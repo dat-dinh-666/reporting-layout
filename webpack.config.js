@@ -18,6 +18,7 @@ const htmlPluginEntries = templateFiles.map(
     new HTMLWebpackPlugin({
       inject: true,
       hash: false,
+      minify: false,
       filename: template,
       template: path.resolve(__dirname, template),
     })
@@ -46,6 +47,19 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: ["babel-loader"],
+      },
+      {
+        test: /\.(png|gif|jpe?g|svg)$/i,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              name: "images/design/[name].[hash:6].[ext]",
+              publicPath: "../",
+              limit: environment.limits.images,
+            },
+          },
+        ],
       },
       {
         test: /\.(eot|ttf|woff|woff2)$/,
@@ -79,6 +93,14 @@ module.exports = {
           globOptions: {
             ignore: ["*.DS_Store", "Thumbs.db"],
           },
+        },
+      ],
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, "public/"),
+          to: path.resolve(environment.paths.output),
         },
       ],
     }),
