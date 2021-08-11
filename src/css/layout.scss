@@ -10,4 +10,12 @@
 .main {
   order: 1;
   flex-basis: calc(100% - 210px);
+  padding: 15px;
+  background: rgba(58, 67, 74, 0.03);
+  section,
+  header,
+  footer {
+    margin-bottom: 15px;
+    background: white;
+  }
 }

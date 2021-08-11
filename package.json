@@ -49,6 +49,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4"
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "micromodal": "^0.4.6"
   }
 }
