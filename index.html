@@ -3375,15 +3375,14 @@
             </div>
           </section>
 
-          <section id="inquiry" class="box">
-            <div class="box-header">
-              <div class="box-actions">
-                <button type="button" class="help"></button>
-                <button type="button" class="maxsize"></button>
-              </div>
+          <section id="inquiry" class="inquiry">
+            <div class="inquiry__header">
               <h2>
-                <i class="boxicon-inquiry"></i><span>Inquiry Manager</span>
+                <i class="far fa-file-alt"></i><span>Inquiry Manager</span>
               </h2>
+              <div class="inquiry__actions"><span>View All Inquiries</span>
+                <button type="button" class="inquiry__button view-all"><i class="fas fa-plus"></i></button>
+              </div>
             </div>
             <div class="box-teaser"></div>
             <div class="box-full">
@@ -3475,72 +3474,11 @@
                 </tbody>
               </table>
               <a class="more-data"></a>
-              <div class="box-menu xl">
-                <button class="refresh"></button>
-                <div class="box-menu-actions">
-                  <button type="button" class="fullsize"></button>
-                  <button type="button" class="settings"></button>
-                  <button type="button" class="send"></button>
-                </div>
-                <ul class="box-menu-filters">
-                  <li class="dropdown dropup">
-                    <a href="#"
-                      ><span>Cycle From</span><span>2 (2011/2012)</span
-                      ><b class="caret"></b
-                    ></a>
-                  </li>
-                  <li class="dropdown dropup">
-                    <a href="#"
-                      ><span>Cycle To</span><span>2 (2011/2012)</span
-                      ><b class="caret"></b
-                    ></a>
-                  </li>
-                  <li class="dropdown dropup">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                      ><span>Created</span><span>Last 30 D</span
-                      ><b class="caret"></b
-                    ></a>
-                    <div id="created" class="dropdown-menu">
-                      <ul>
-                        <li class="active">
-                          <a tabindex="-1" href="#">Last 30 D</a>
-                        </li>
-                        <li><a tabindex="-1" href="#">Last week</a></li>
-                        <li><a tabindex="-1" href="#">Last 2 days</a></li>
-                        <li><a tabindex="-1" href="#">Yesterday</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="dropdown dropup">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                      ><span>Status</span><span>All</span><b class="caret"></b
-                    ></a>
-                    <div id="status" class="dropdown-menu">
-                      <ul>
-                        <li class="active">
-                          <a tabindex="-1" href="#">All</a>
-                        </li>
-                        <li><a tabindex="-1" href="#">Read</a></li>
-                        <li><a tabindex="-1" href="#">Unread</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="dropdown dropup">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                      ><span>Created By</span><span>All</span
-                      ><b class="caret"></b
-                    ></a>
-                    <div id="createdBy" class="dropdown-menu">
-                      <ul>
-                        <li class="active">
-                          <a tabindex="-1" href="#">All</a>
-                        </li>
-                        <li><a tabindex="-1" href="#">User 1</a></li>
-                        <li><a tabindex="-1" href="#">User 2</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
+              <div class="inquiry__footer">
+                <div class="inquiry__info"><span class="inquiry__info__name">Inquiry Status</span><span class="inquiry__info__value">All</span></div>
+                <div class="inquiry__info"><span class="inquiry__info__name">Created By</span><span class="inquiry__info__value">All</span></div>
+                <div class="inquiry__info"><span class="inquiry__info__name">Created On</span><span class="inquiry__info__value">Last 30 Days</span></div>
+                <div class="inquiry__info"><span class="inquiry__info__name">Filter</span><span class="inquiry__info__value">None</span></div>
               </div>
             </div>
           </section>

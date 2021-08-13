@@ -72,7 +72,7 @@
       border: 0;
       background: transparent;
       font-weight: bold;
-      color: var(--red-lighter);
+      color: var(--color-text-danger);
       span {
         svg {
           width: 24px;
@@ -86,7 +86,7 @@
     p {
       font-size: 0.75rem;
       line-height: 1.125rem;
-      color: var(--gray);
+      color: var(--color-text-light);
       opacity: 0.6;
     }
   }
@@ -98,10 +98,10 @@
     border-radius: 2px;
     color: var(--white);
     &--new {
-      background-color: var(--green);
+      background-color: var(--color-text-success);
     }
     &--pro {
-      background-color: var(--gray);
+      background-color: var(--color-text-light);
     }
   }
 
