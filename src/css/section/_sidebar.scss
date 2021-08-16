@@ -1,0 +1,114 @@
+%base-sidebar-item-style {
+  white-space: nowrap;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  padding: 8px 0px 8px 24px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.sidebar__inner {
+  background-color: var(--sidebar-bg);
+  position: sticky;
+  top: -1px;
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: 0.3s;
+
+  .logo {
+    height: 100px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .navigation {
+    .nav-wrapper {
+      ul {
+        padding: 0;
+        .sidebar__inner__item {
+          @extend %base-sidebar-item-style;
+          list-style: none;
+
+          a {
+            transition: all 0.3s;
+            text-decoration: none;
+            color: var(--black);
+            opacity: 0.6;
+
+            // FONT AWESOME
+            svg {
+              width: 24px;
+            }
+          }
+
+          &:hover {
+            background-color: var(--sidebar-active-color);
+            a {
+              opacity: 1;
+            }
+          }
+
+          &--active {
+            background-color: var(--sidebar-active-color);
+            a {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__actions {
+    margin-top: 100px;
+    button {
+      @extend %base-sidebar-item-style;
+      display: block;
+      border: 0;
+      background: transparent;
+      font-weight: bold;
+      color: var(--red-lighter);
+      span {
+        svg {
+          width: 24px;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    margin: 80px 0px 24px 24px;
+    p {
+      font-size: 0.75rem;
+      line-height: 1.125rem;
+      color: var(--gray);
+      opacity: 0.6;
+    }
+  }
+
+  .sidebar__badge {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    padding: 2px 4px;
+    border-radius: 2px;
+    color: var(--white);
+    &--new {
+      background-color: var(--green);
+    }
+    &--pro {
+      background-color: var(--gray);
+    }
+  }
+
+  &__item--disabled {
+    pointer-events: none !important;
+    a {
+      opacity: 0.3 !important;
+    }
+  }
+}
