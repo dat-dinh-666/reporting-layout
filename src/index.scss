@@ -1,10 +1,13 @@
 @import "css/normalize.css";
 @import "css/layout";
-@import "css/sidebar";
-@import "css/topbar";
 @import "css/modal";
 @import "css/utilities";
 @import "css/inquiry";
+@import "css/global";
+@import "css/section/_sidebar";
+@import "css/section/box";
+@import "css/section/topbar";
+@import "css/section/breadcrumbs";
 
 body {
   font-family: "Noto Sans", Arial, Helvetica, sans-serif;

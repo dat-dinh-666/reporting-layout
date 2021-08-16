@@ -55,7 +55,6 @@
                 </div>
               </div>
           </header>
-
           <!-- <nav class="navigation">
             <div id="main-nav">
               <div class="nav-wrapper">
@@ -128,54 +127,316 @@
               </button>
             </div>
           </nav> -->
-
           <section class="breadcrumbs">
-            <ul class="path">
-              <li><a href="#">World</a></li>
-              <li><a href="#">Europe</a></li>
-              <li class="path-more dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                  >Germany <b class="caret"></b
-                ></a>
-                <div id="menu1" class="dropdown-menu">
-                  <ul>
-                    <li><a tabindex="-1" href="#">Berlin</a></li>
-                    <li><a tabindex="-1" href="#">Hamburg</a></li>
-                    <li><a tabindex="-1" href="#">Hesse</a></li>
-                  </ul>
+            <div class="breadcrumbs-inner">
+              <div class="path">
+                <div class="label">Management Level</div>
+                <div class="selectable-wrapper">
+                  <select class="selectable">
+                    <option>World Europe</option>
+                    <option>Berlin</option>
+                    <option>Hesse</option>
+                  </select>
                 </div>
-              </li>
-            </ul>
-            <div class="period dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                ><span>1 (2012/2013)</span> <b class="caret"></b
-              ></a>
-              <div class="dropdown-menu pull-right">
-                <ul>
-                  <li class="active">
-                    <a tabindex="-1" href="#">1 (2012/2013)</a>
-                  </li>
-                  <li><a tabindex="-1" href="#">2 (2011/2012)</a></li>
-                  <li><a tabindex="-1" href="#">3 (2010/2011)</a></li>
-                </ul>
               </div>
+
+              <!-- <ul class="path">
+                <li><a href="#">World</a></li>
+                <li><a href="#">Europe</a></li>
+                <li class="path-more">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                    >Germany <b class="caret"></b
+                  ></a>
+                  <div id="menu1" class="dropdown-menu">
+                    <ul>
+                      <li><a tabindex="-1" href="#">Berlin</a></li>
+                      <li><a tabindex="-1" href="#">Hamburg</a></li>
+                      <li><a tabindex="-1" href="#">Hesse</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul> -->
+              <div class="period selectable-wrapper">
+                <div class="label">Timeframe</div>
+                <div class="selectable-wrapper">
+                  <select class="selectable">
+                    <option>1 (2012/2013)</option>
+                    <option>2 (2011/2012)</option>
+                    <option>3 (2010/2011)</option>
+                  </select>
+                  <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span>1 (2012/2013)</span></a>
+                  <div class="dropdown-menu pull-right">
+                    <ul>
+                      <li class="active">
+                        <a tabindex="-1" href="#">1 (2012/2013)</a>
+                      </li>
+                      <li><a tabindex="-1" href="#">2 (2011/2012)</a></li>
+                      <li><a tabindex="-1" href="#">3 (2010/2011)</a></li>
+                    </ul>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="checks" class="box">
+            <div class="box-header">
+              <h2>
+                <i class="fas fa-check"></i><span>Completed Checks</span>
+              </h2>
+              <div class="box-actions">
+                <button type="button" class="inline-button maxsize">View more Checks <i class="fas fa-plus"></i></button>
+                <button type="button" class="inline-button maxsize active">View less Checks <i class="fas fa-minus"></i></button>
+              </div>
+            </div>
+            <div class="box-teaser">
+              <table id="latestChecks" class="table">
+                <caption>
+                  Latest 5 Checks
+                </caption>
+                <tbody>
+                  <tr>
+                    <td>42277839</td>
+                    <td>1205</td>
+                    <td>Geneve</td>
+                    <td>Rue de Costa 26/07/2012</td>
+                    <td>76%</td>
+                  </tr>
+                  <tr>
+                    <td>42277839</td>
+                    <td>1205</td>
+                    <td>Lausanne</td>
+                    <td>Rue de Costa 26/07/2012</td>
+                    <td>76%</td>
+                  </tr>
+                  <tr>
+                    <td>42277839</td>
+                    <td>1205</td>
+                    <td>Geneve</td>
+                    <td>Rue de Costa 26/07/2012</td>
+                    <td>76%</td>
+                  </tr>
+                  <tr>
+                    <td>42277839</td>
+                    <td>1205</td>
+                    <td>Montreux</td>
+                    <td>Rue de Costa 26/07/2012</td>
+                    <td>76%</td>
+                  </tr>
+                  <tr>
+                    <td>42277839</td>
+                    <td>1205</td>
+                    <td>Geneve</td>
+                    <td>Rue de Costa 26/07/2012</td>
+                    <td>76%</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="checks-stats">
+                <div class="up">
+                  <span class="name">Checks OK</span>
+                  <span class="value">29/1.5%</span>
+                </div>
+                <div class="down">
+                  <span class="name">Open Checks</span>
+                  <span class="value">1896/98.5%</span>
+                </div>
+                <form action="" class="checks-search">
+                  <label for="qSearch">Questionnaire search</label>
+                  <input
+                    type="text"
+                    id="qSearch"
+                    placeholder="Type a question or word…"
+                  />
+                  <input type="submit" value="Search" id="search-checks" />
+                </form>
+              </div>
+            </div>
+            <div class="box-full">
+              <table id="checksTable" class="table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Opsmgr</th>
+                    <th>Check</th>
+                    <th>Loc.</th>
+                    <th>P. Code</th>
+                    <th>City</th>
+                    <th>Street</th>
+                    <th>Check</th>
+                    <th>Result</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <button type="button" class="open-att"></button
+                      ><button type="button" class="open-msg"></button>
+                    </td>
+                    <td>80112 Munchen - (I) - Im Tal 6</td>
+                    <td>Ops Mgr Waltl</td>
+                    <td>4460780</td>
+                    <td>132</td>
+                    <td>80331</td>
+                    <td>Munchen</td>
+                    <td>Im tal 6</td>
+                    <td>02/11/12</td>
+                    <td>91.08%</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button type="button" class="open-att"></button
+                      ><button type="button" class="open-msg"></button>
+                    </td>
+                    <td>80112 Munchen - (I) - Im Tal 6</td>
+                    <td>Ops Mgr Waltl</td>
+                    <td>4460780</td>
+                    <td>132</td>
+                    <td>80331</td>
+                    <td>Munchen</td>
+                    <td>Im tal 6</td>
+                    <td>02/11/12</td>
+                    <td>91.08%</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button type="button" class="open-att"></button
+                      ><button type="button" class="open-msg"></button>
+                    </td>
+                    <td>80112 Munchen - (I) - Im Tal 6</td>
+                    <td>Ops Mgr Waltl</td>
+                    <td>4460780</td>
+                    <td>132</td>
+                    <td>80331</td>
+                    <td>Munchen</td>
+                    <td>Im tal 6</td>
+                    <td>02/11/12</td>
+                    <td>91.08%</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button type="button" class="open-att"></button
+                      ><button type="button" class="open-msg"></button>
+                    </td>
+                    <td>80112 Munchen - (I) - Im Tal 6</td>
+                    <td>Ops Mgr Waltl</td>
+                    <td>4460780</td>
+                    <td>132</td>
+                    <td>80331</td>
+                    <td>Munchen</td>
+                    <td>Im tal 6</td>
+                    <td>02/11/12</td>
+                    <td>91.08%</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button type="button" class="open-att"></button
+                      ><button type="button" class="open-msg"></button>
+                    </td>
+                    <td>80112 Munchen - (I) - Im Tal 6</td>
+                    <td>Ops Mgr Waltl</td>
+                    <td>4460780</td>
+                    <td>132</td>
+                    <td>80331</td>
+                    <td>Munchen</td>
+                    <td>Im tal 6</td>
+                    <td>02/11/12</td>
+                    <td>91.08%</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button type="button" class="open-att"></button
+                      ><button type="button" class="open-msg"></button>
+                    </td>
+                    <td>80112 Munchen - (I) - Im Tal 6</td>
+                    <td>Ops Mgr Waltl</td>
+                    <td>4460780</td>
+                    <td>132</td>
+                    <td>80331</td>
+                    <td>Munchen</td>
+                    <td>Im tal 6</td>
+                    <td>02/11/12</td>
+                    <td>91.08%</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button type="button" class="open-att"></button
+                      ><button type="button" class="open-msg"></button>
+                    </td>
+                    <td>80112 Munchen - (I) - Im Tal 6</td>
+                    <td>Ops Mgr Waltl</td>
+                    <td>4460780</td>
+                    <td>132</td>
+                    <td>80331</td>
+                    <td>Munchen</td>
+                    <td>Im tal 6</td>
+                    <td>02/11/12</td>
+                    <td>91.08%</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button type="button" class="open-att"></button
+                      ><button type="button" class="open-msg"></button>
+                    </td>
+                    <td>80112 Munchen - (I) - Im Tal 6</td>
+                    <td>Ops Mgr Waltl</td>
+                    <td>4460780</td>
+                    <td>132</td>
+                    <td>80331</td>
+                    <td>Munchen</td>
+                    <td>Im tal 6</td>
+                    <td>02/11/12</td>
+                    <td>91.08%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="box-menu">
+              <!-- <button class="refresh"></button>
+              <div class="box-menu-actions">
+                <button type="button" class="fullsize">
+                  <i class="fas fa-expand-alt"></i>
+                </button>
+                <button type="button" class="settings"></button>
+                <button type="button" class="send"></button>
+              </div> -->
+              <ul class="box-menu-filters">
+                <li class="dropdown dropup">
+                  <button class="clickable">
+                    From <strong>2 (2011/2012)</strong>
+                  </button>
+                </li>
+                <li class="dropdown dropup">
+                  <button class="clickable">
+                    To <strong>2 (2011/2012)</strong>
+                  </button>
+                </li>
+                <li>
+                  <button class="clickable">
+                    Location <strong>All</strong>
+                  </button>
+                </li>
+              </ul>
             </div>
           </section>
 
           <section id="trends" class="box">
             <div class="box-header">
+              <h2>
+                <i class="fas fa-file-alt"></i>
+                <span>Trends</span>
+              </h2>
               <div class="box-actions">
-                <button type="button" class="help"></button>
-                <button type="button" class="maxsize"></button>
+                <button type="button" class="inline-button maxsize">View more Trends <i class="fas fa-plus"></i></button>
+                <button type="button" class="inline-button maxsize active">View less Trends <i class="fas fa-minus"></i></button>
               </div>
-
-              <h2><i class="boxicon-trends"></i><span>Trends</span></h2>
             </div>
             <div class="box-teaser">
               <div class="chart">
                 <img src="assets/images/temp/trends-chart-1.jpg" alt="chart" />
               </div>
-
               <table class="select">
                 <tr>
                   <td>
@@ -281,47 +542,33 @@
               <div class="chart">
                 <img src="assets/images/temp/trends-chart-2.jpg" alt="chart" />
               </div>
-              <div class="box-menu">
-                <button class="refresh"></button>
-                <div class="box-menu-actions">
-                  <button type="button" class="fullsize"></button>
-                  <button type="button" class="settings"></button>
-                  <button type="button" class="send"></button>
-                </div>
+            </div>
+            <div class="box-menu">
+              <!-- <button class="refresh"></button> -->
+              <!-- <div class="box-menu-actions">
+                <button type="button" class="fullsize"></button>
+                <button type="button" class="settings"></button>
+                <button type="button" class="send"></button>
+              </div> -->
+              <ul class="box-menu-filters">
                 <ul class="box-menu-filters">
                   <li class="dropdown dropup">
-                    <a href="#"
-                      ><span>Cycle From</span><span>2 (2011/2012)</span
-                      ><b class="caret"></b
-                    ></a>
+                    <button class="clickable">
+                      From <strong>2 (2011/2012)</strong>
+                    </button>
                   </li>
                   <li class="dropdown dropup">
-                    <a href="#"
-                      ><span>Cycle To</span><span>2 (2011/2012)</span
-                      ><b class="caret"></b
-                    ></a>
+                    <button class="clickable">
+                      To <strong>2 (2011/2012)</strong>
+                    </button>
                   </li>
-                  <li class="dropdown dropup">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                      ><span>Cycle Summary</span><span>None</span
-                      ><b class="caret"></b
-                    ></a>
-                    <div class="dropdown-menu">
-                      <ul>
-                        <li class="active">
-                          <a tabindex="-1" href="#">Cycle Sum 1</a>
-                        </li>
-                        <li><a tabindex="-1" href="#">Cycle Sum 2</a></li>
-                        <li><a tabindex="-1" href="#">Cycle Sum 3</a></li>
-                        <li><a tabindex="-1" href="#">Cycle Sum 2</a></li>
-                        <li><a tabindex="-1" href="#">Cycle Sum 3</a></li>
-                        <li><a tabindex="-1" href="#">Cycle Sum 2</a></li>
-                        <li><a tabindex="-1" href="#">Cycle Sum 3</a></li>
-                      </ul>
-                    </div>
+                  <li>
+                    <button class="clickable">
+                      Location <strong>All</strong>
+                    </button>
                   </li>
                 </ul>
-              </div>
+              </ul>
             </div>
           </section>
 
@@ -565,250 +812,6 @@
                         <li><a tabindex="-1" href="#">3 Total</a></li>
                       </ul>
                     </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          <section id="checks" class="box">
-            <div class="box-header">
-              <div class="box-actions">
-                <button type="button" class="help"></button>
-                <button type="button" class="maxsize"></button>
-              </div>
-              <h2>
-                <i class="boxicon-checks"></i><span>Completed Checks</span>
-              </h2>
-            </div>
-            <div class="box-teaser">
-              <table id="latestChecks" class="table">
-                <caption>
-                  Latest 5 Checks
-                </caption>
-                <tbody>
-                  <tr>
-                    <td>42277839</td>
-                    <td>1205</td>
-                    <td>Geneve</td>
-                    <td>Rue de Costa 26/07/2012</td>
-                    <td>76%</td>
-                  </tr>
-                  <tr>
-                    <td>42277839</td>
-                    <td>1205</td>
-                    <td>Lausanne</td>
-                    <td>Rue de Costa 26/07/2012</td>
-                    <td>76%</td>
-                  </tr>
-                  <tr>
-                    <td>42277839</td>
-                    <td>1205</td>
-                    <td>Geneve</td>
-                    <td>Rue de Costa 26/07/2012</td>
-                    <td>76%</td>
-                  </tr>
-                  <tr>
-                    <td>42277839</td>
-                    <td>1205</td>
-                    <td>Montreux</td>
-                    <td>Rue de Costa 26/07/2012</td>
-                    <td>76%</td>
-                  </tr>
-                  <tr>
-                    <td>42277839</td>
-                    <td>1205</td>
-                    <td>Geneve</td>
-                    <td>Rue de Costa 26/07/2012</td>
-                    <td>76%</td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <div class="checks-stats">
-                <div class="up">
-                  <span class="name">Checks OK</span>
-                  <span class="value">29/1.5%</span>
-                </div>
-                <div class="down">
-                  <span class="name">Open Checks</span>
-                  <span class="value">1896/98.5%</span>
-                </div>
-                <form action="" class="checks-search">
-                  <label for="qSearch">Questionnaire search</label>
-                  <input
-                    type="text"
-                    id="qSearch"
-                    placeholder="Type a question or word…"
-                  />
-                  <input type="submit" value="Search" id="search-checks" />
-                </form>
-              </div>
-            </div>
-            <div class="box-full">
-              <table id="checksTable" class="table">
-                <thead>
-                  <tr>
-                    <th></th>
-                    <th></th>
-                    <th>Opsmgr</th>
-                    <th>Check</th>
-                    <th>Loc.</th>
-                    <th>P. Code</th>
-                    <th>City</th>
-                    <th>Street</th>
-                    <th>Check</th>
-                    <th>Result</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <button type="button" class="open-att"></button
-                      ><button type="button" class="open-msg"></button>
-                    </td>
-                    <td>80112 Munchen - (I) - Im Tal 6</td>
-                    <td>Ops Mgr Waltl</td>
-                    <td>4460780</td>
-                    <td>132</td>
-                    <td>80331</td>
-                    <td>Munchen</td>
-                    <td>Im tal 6</td>
-                    <td>02/11/12</td>
-                    <td>91.08%</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button type="button" class="open-att"></button
-                      ><button type="button" class="open-msg"></button>
-                    </td>
-                    <td>80112 Munchen - (I) - Im Tal 6</td>
-                    <td>Ops Mgr Waltl</td>
-                    <td>4460780</td>
-                    <td>132</td>
-                    <td>80331</td>
-                    <td>Munchen</td>
-                    <td>Im tal 6</td>
-                    <td>02/11/12</td>
-                    <td>91.08%</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button type="button" class="open-att"></button
-                      ><button type="button" class="open-msg"></button>
-                    </td>
-                    <td>80112 Munchen - (I) - Im Tal 6</td>
-                    <td>Ops Mgr Waltl</td>
-                    <td>4460780</td>
-                    <td>132</td>
-                    <td>80331</td>
-                    <td>Munchen</td>
-                    <td>Im tal 6</td>
-                    <td>02/11/12</td>
-                    <td>91.08%</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button type="button" class="open-att"></button
-                      ><button type="button" class="open-msg"></button>
-                    </td>
-                    <td>80112 Munchen - (I) - Im Tal 6</td>
-                    <td>Ops Mgr Waltl</td>
-                    <td>4460780</td>
-                    <td>132</td>
-                    <td>80331</td>
-                    <td>Munchen</td>
-                    <td>Im tal 6</td>
-                    <td>02/11/12</td>
-                    <td>91.08%</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button type="button" class="open-att"></button
-                      ><button type="button" class="open-msg"></button>
-                    </td>
-                    <td>80112 Munchen - (I) - Im Tal 6</td>
-                    <td>Ops Mgr Waltl</td>
-                    <td>4460780</td>
-                    <td>132</td>
-                    <td>80331</td>
-                    <td>Munchen</td>
-                    <td>Im tal 6</td>
-                    <td>02/11/12</td>
-                    <td>91.08%</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button type="button" class="open-att"></button
-                      ><button type="button" class="open-msg"></button>
-                    </td>
-                    <td>80112 Munchen - (I) - Im Tal 6</td>
-                    <td>Ops Mgr Waltl</td>
-                    <td>4460780</td>
-                    <td>132</td>
-                    <td>80331</td>
-                    <td>Munchen</td>
-                    <td>Im tal 6</td>
-                    <td>02/11/12</td>
-                    <td>91.08%</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button type="button" class="open-att"></button
-                      ><button type="button" class="open-msg"></button>
-                    </td>
-                    <td>80112 Munchen - (I) - Im Tal 6</td>
-                    <td>Ops Mgr Waltl</td>
-                    <td>4460780</td>
-                    <td>132</td>
-                    <td>80331</td>
-                    <td>Munchen</td>
-                    <td>Im tal 6</td>
-                    <td>02/11/12</td>
-                    <td>91.08%</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button type="button" class="open-att"></button
-                      ><button type="button" class="open-msg"></button>
-                    </td>
-                    <td>80112 Munchen - (I) - Im Tal 6</td>
-                    <td>Ops Mgr Waltl</td>
-                    <td>4460780</td>
-                    <td>132</td>
-                    <td>80331</td>
-                    <td>Munchen</td>
-                    <td>Im tal 6</td>
-                    <td>02/11/12</td>
-                    <td>91.08%</td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <div class="box-menu">
-                <button class="refresh"></button>
-                <div class="box-menu-actions">
-                  <button type="button" class="fullsize"></button>
-                  <button type="button" class="settings"></button>
-                  <button type="button" class="send"></button>
-                </div>
-                <ul class="box-menu-filters">
-                  <li class="dropdown dropup">
-                    <a href="#"
-                      ><span>Cycle From</span><span>2 (2011/2012)</span
-                      ><b class="caret"></b
-                    ></a>
-                  </li>
-                  <li class="dropdown dropup">
-                    <a href="#"
-                      ><span>Cycle To</span><span>2 (2011/2012)</span
-                      ><b class="caret"></b
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#" class="add-location"
-                      ><span>Location</span><span>Add</span></a
-                    >
                   </li>
                 </ul>
               </div>
@@ -3375,20 +3378,22 @@
             </div>
           </section>
 
-          <section id="inquiry" class="inquiry section-container">
-            <div class="section__header">
-              <h2 class="section__title">
-                <i class="far fa-file-alt section__icon"></i><span>Inquiry Manager</span>
+          <section id="inquiry" class="box">
+            <div class="box-header">
+              <h2>
+                <i class="far fa-file-alt"></i><span>Inquiry Manager</span>
               </h2>
-              <div class="section__actions"><span>View All Inquiries</span>
-                <button type="button" class="view-all"><i class="fas fa-plus"></i></button>
+             <div class="box-actions">
+                <button type="button" class="inline-button maxsize">View more Checks <i class="fas fa-plus"></i></button>
+                <button type="button" class="inline-button maxsize active">View less Checks <i class="fas fa-minus"></i></button>
               </div>
+
             </div>
-            <div class="data-table">
-              <p class="data-table__info">
+            <div class='box-teaser'>
+              <table class="table">
+              <caption>
                 Last 5 Inquires
-              </p>
-              <table class="data-table__table">
+              </caption>
                 <tbody><tr>
                     <td>2202734</td>
                     <td>20 Days 8 Hours</td>
@@ -3432,12 +3437,87 @@
                     <td>In process</td>
                   </tr>
                 </tbody>
-              </table></div>
-              <div class="section__footer">
-                <div class="section__info"><span class="section__info__name">Inquiry Status</span><span class="section__info__value">All</span></div>
-                <div class="section__info"><span class="section__info__name">Created By</span><span class="section__info__value">All</span></div>
-                <div class="section__info"><span class="section__info__name">Created On</span><span class="section__info__value">Last 30 Days</span></div>
-                <div class="section__info"><span class="section__info__name">Filter</span><span class="section__info__value">None</span></div>
+              </table>
+</div>
+
+ <div class='box-full'>
+              <table class="table">
+              <caption>
+                Last 5 Inquires
+              </caption>
+                <tbody><tr>
+                    <td>2202734</td>
+                    <td>20 Days 8 Hours</td>
+                    <td>There was an error on Product, There was an error on Product</td>
+                    <td>1000 Port Said - El Corniche Atef Sadai Street</td>
+                    <td>2202734</td>
+                    <td>User.name</td>
+                    <td>In process</td>
+                  </tr><tr>
+                    <td>2202734</td>
+                    <td>20 Days 8 Hours</td>
+                    <td>There was an error on Product, There was an error on Product</td>
+                    <td>1000 Port Said - El Corniche Atef Sadai Street</td>
+                    <td>2202734</td>
+                    <td>User.name</td>
+                    <td>In process</td>
+                  </tr><tr>
+                    <td>2202734</td>
+                    <td>20 Days 8 Hours</td>
+                    <td>There was an error on Product, There was an error on Product</td>
+                    <td>1000 Port Said - El Corniche Atef Sadai Street</td>
+                    <td>2202734</td>
+                    <td>User.name</td>
+                    <td>In process</td>
+                  </tr>
+                  <tr>
+                    <td>2202734</td>
+                    <td>20 Days 8 Hours</td>
+                    <td>There was an error on Product, There was an error on Product</td>
+                    <td>1000 Port Said - El Corniche Atef Sadai Street</td>
+                    <td>2202734</td>
+                    <td>User.name</td>
+                    <td>In process</td>
+                  </tr><tr>
+                    <td>2202734</td>
+                    <td>20 Days 8 Hours</td>
+                    <td>There was an error on Product, There was an error on Product</td>
+                    <td>1000 Port Said - El Corniche Atef Sadai Street</td>
+                    <td>2202734</td>
+                    <td>User.name</td>
+                    <td>In process</td>
+                  </tr>
+                </tbody>
+              </table>
+</div>
+              <div class="box-menu">
+                <!-- <button class="refresh"></button>
+                <div class="box-menu-actions">
+                  <button type="button" class="fullsize"></button>
+                  <button type="button" class="settings"></button>
+                  <button type="button" class="send"></button>
+                </div> -->
+              <ul class="box-menu-filters">
+                <li class="dropdown dropup">
+                  <button class="clickable">
+                    Inquiry Status <strong>All</strong>
+                  </button>
+                </li>
+                <li class="dropdown dropup">
+                  <button class="clickable">
+                    Created By <strong>All</strong>
+                  </button>
+                </li>  <li class="dropdown dropup">
+                  <button class="clickable">
+                    Created On <strong>Last 30 Days</strong>
+                  </button>
+                </li>
+                <li class="dropdown dropup">
+                  <button class="clickable">
+                    Filter <strong>None</strong>
+                  </button>
+                </li>
+              </ul>
               </div>
           </section>
 
@@ -3691,8 +3771,7 @@
                     <a href="#checks">
                       <i class="fas fa-check"></i>
                       <span>checks</span>
-                      </a
-                    >
+                    </a>
                   </li>
                   <li class="sidebar__inner__item">
                     <a href="#inquiry"><i class="far fa-file-alt"></i> <span>inquiry</span></a>
