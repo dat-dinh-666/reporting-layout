@@ -1,0 +1,44 @@
+#act {
+  .story {
+    display: flex;
+    align-items: center;
+    padding: 14px 16px;
+
+    .story-edit {
+      display: none;
+    }
+
+    .story-value {
+      font-size: 24px;
+      margin-right: 16px;
+      min-width: 80px;
+      text-align: center;
+      font-weight: bold;
+      color: var(--color-text-success, #3aa600);
+    }
+
+    > div {
+      flex: 1;
+      color: var(--color-text-light, #3a434a);
+    }
+
+    &.down {
+      .story-value {
+        color: var(--color-text-danger, #e65358);
+      }
+    }
+  }
+
+  .act-stories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    padding: 8px 0;
+    .story {
+      &:nth-child(4n + 1),
+      &:nth-child(4n + 2) {
+        background: rgba(58, 67, 74, 0.05);
+      }
+    }
+  }
+}
