@@ -574,11 +574,13 @@
 
           <section id="act" class="box">
             <div class="box-header">
+              <h2>
+                <i class="fas fa-check"></i><span>Act Now</span>
+              </h2>
               <div class="box-actions">
-                <button type="button" class="help"></button>
-                <button type="button" class="maxsize"></button>
+                <button type="button" class="inline-button maxsize">View more Act <i class="fas fa-plus"></i></button>
+                <button type="button" class="inline-button maxsize active">View less Act <i class="fas fa-minus"></i></button>
               </div>
-              <h2><i class="boxicon-act"></i><span>Act Now</span></h2>
             </div>
             <div class="box-teaser">
               <div class="act-stories">
@@ -613,7 +615,6 @@
                   </div>
                 </div>
                 <div class="story down">
-                  <button class="story-comment">3</button>
                   <i class="story-icon"></i>
                   <span class="story-value">18.7%</span>
                   <div>
@@ -693,7 +694,7 @@
                 <a class="more-data"></a>
               </div>
 
-              <div id="act-stories-ticker">
+              <!-- <div id="act-stories-ticker">
                 <div class="wrapper">
                   <div class="story">
                     <i class="story-icon"></i>
@@ -720,7 +721,7 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
             <div class="box-full">
               <div class="act-stories">
@@ -778,43 +779,33 @@
                 </div>
                 <a class="more-data"></a>
               </div>
-              <div class="box-menu">
-                <button class="refresh"></button>
-                <div class="box-menu-actions">
-                  <button type="button" class="fullsize"></button>
-                  <button type="button" class="settings"></button>
-                  <button type="button" class="send"></button>
-                </div>
-                <ul class="box-menu-filters">
-                  <li class="dropdown dropup">
-                    <a href="#"
-                      ><span>Cycle From</span><span>2 (2011/2012)</span
-                      ><b class="caret"></b
-                    ></a>
-                  </li>
-                  <li class="dropdown dropup">
-                    <a href="#"
-                      ><span>Cycle To</span><span>2 (2011/2012)</span
-                      ><b class="caret"></b
-                    ></a>
-                  </li>
-                  <li class="dropdown dropup">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                      ><span>Criteria</span><span>Total</span
-                      ><b class="caret"></b
-                    ></a>
-                    <div class="dropdown-menu">
-                      <ul>
-                        <li class="active">
-                          <a tabindex="-1" href="#">1 Total</a>
-                        </li>
-                        <li><a tabindex="-1" href="#">2 Total</a></li>
-                        <li><a tabindex="-1" href="#">3 Total</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+            </div>
+            <div class="box-menu">
+              <!-- <button class="refresh"></button>
+              <div class="box-menu-actions">
+                <button type="button" class="fullsize">
+                  <i class="fas fa-expand-alt"></i>
+                </button>
+                <button type="button" class="settings"></button>
+                <button type="button" class="send"></button>
+              </div> -->
+              <ul class="box-menu-filters">
+                <li class="dropdown dropup">
+                  <button class="clickable">
+                    From <strong>2 (2011/2012)</strong>
+                  </button>
+                </li>
+                <li class="dropdown dropup">
+                  <button class="clickable">
+                    To <strong>2 (2011/2012)</strong>
+                  </button>
+                </li>
+                <li>
+                  <button class="clickable">
+                    Location <strong>All</strong>
+                  </button>
+                </li>
+              </ul>
             </div>
           </section>
 
