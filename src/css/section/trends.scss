@@ -1,0 +1,43 @@
+#trends {
+  .box-teaser {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    align-items: start;
+  }
+
+  .chart {
+    img {
+      width: 100%;
+    }
+  }
+
+  .table {
+    width: auto;
+
+    .selected {
+      font-weight: bold;
+      background: var(--color-table-select);
+    }
+
+    .value {
+      font-weight: bold;
+      div {
+        display: flex;
+        align-items: center;
+      }
+
+      &.up {
+        color: var(--color-text-success);
+      }
+
+      &.down {
+        color: var(--color-text-danger);
+      }
+    }
+
+    .percentage {
+      font-weight: bold;
+    }
+  }
+}
