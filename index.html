@@ -189,197 +189,282 @@
                   class="fas fa-minus"></i></button>
             </div>
           </div>
-          <div class="box-teaser">
-            <table id="latestChecks" class="table">
-              <caption>
-                Latest 5 Checks
-              </caption>
-              <tbody>
-                <tr>
-                  <td>42277839</td>
-                  <td>1205</td>
-                  <td>Geneve</td>
-                  <td>Rue de Costa 26/07/2012</td>
-                  <td>76%</td>
-                </tr>
-                <tr>
-                  <td>42277839</td>
-                  <td>1205</td>
-                  <td>Lausanne</td>
-                  <td>Rue de Costa 26/07/2012</td>
-                  <td>76%</td>
-                </tr>
-                <tr>
-                  <td>42277839</td>
-                  <td>1205</td>
-                  <td>Geneve</td>
-                  <td>Rue de Costa 26/07/2012</td>
-                  <td>76%</td>
-                </tr>
-                <tr>
-                  <td>42277839</td>
-                  <td>1205</td>
-                  <td>Montreux</td>
-                  <td>Rue de Costa 26/07/2012</td>
-                  <td>76%</td>
-                </tr>
-                <tr>
-                  <td>42277839</td>
-                  <td>1205</td>
-                  <td>Geneve</td>
-                  <td>Rue de Costa 26/07/2012</td>
-                  <td>76%</td>
-                </tr>
-              </tbody>
-            </table>
 
-            <div class="checks-stats">
-              <div class="up">
+          <div class="box-teaser">
+             <div class="checks-stats">
+              <!-- <div class="up">
                 <span class="name">Checks OK</span>
                 <span class="value">29/1.5%</span>
               </div>
               <div class="down">
                 <span class="name">Open Checks</span>
                 <span class="value">1896/98.5%</span>
-              </div>
+              </div> -->
+          <div class="chart">
+              <img src="assets/images/checks-chart.png" alt="Checks chart" />
+            </div>
               <form action="" class="checks-search">
                 <label for="qSearch">Questionnaire search</label>
-                <input type="text" id="qSearch" placeholder="Type a question or word…" />
+                <div class="searchbox">
+                <i class="fas fa-search fa-flip-horizontal"></i>
+                <input type="text" id="qSearch" placeholder="Type in a city" />
                 <input type="submit" value="Search" id="search-checks" />
-              </form>
+              </div>
+             </form>
             </div>
-          </div>
+
+            <table id="latestChecks" class="table">
+              <caption>
+                Latest 5 Checks
+              </caption>
+              <tbody>
+                <tr>
+                  <td>2202734</td>
+                  <td>Stockholm</td>
+                  <td>Nackstromsgatan 8</td>
+                  <td>29/02/2020</td>
+                  <td>88.1%</td>
+                </tr><tr>
+                  <td>2202734</td>
+                  <td>Stockholm</td>
+                  <td>Nackstromsgatan 8</td>
+                  <td>29/02/2020</td>
+                  <td>88.1%</td>
+                </tr><tr>
+                  <td>2202734</td>
+                  <td>Stockholm</td>
+                  <td>Nackstromsgatan 8</td>
+                  <td>29/02/2020</td>
+                  <td>88.1%</td>
+                </tr><tr>
+                  <td>2202734</td>
+                  <td>Stockholm</td>
+                  <td>Nackstromsgatan 8</td>
+                  <td>29/02/2020</td>
+                  <td>88.1%</td>
+                </tr><tr>
+                  <td>2202734</td>
+                  <td>Stockholm</td>
+                  <td>Nackstromsgatan 8</td>
+                  <td>29/02/2020</td>
+                  <td>88.1%</td>
+                </tr>
+              </tbody>
+            </table>
+
+            </div>
           <div class="box-full">
             <table id="checksTable" class="table">
               <thead>
                 <tr>
                   <th></th>
                   <th></th>
-                  <th>Opsmgr</th>
+                  <th>Retail Store</th>
+                  <th>Loc#</th>
                   <th>Check</th>
-                  <th>Loc.</th>
-                  <th>P. Code</th>
+                  <th>Zip Code</th>
                   <th>City</th>
                   <th>Street</th>
-                  <th>Check</th>
+                  <th>Date</th>
                   <th>Result</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr class="disabled">
                   <td>
-                    <button type="button" class="open-att"></button><button type="button" class="open-msg"></button>
+                    <button type="button" class="open-att"><i class="far fa-clock"></i></button>
                   </td>
-                  <td>80112 Munchen - (I) - Im Tal 6</td>
-                  <td>Ops Mgr Waltl</td>
-                  <td>4460780</td>
-                  <td>132</td>
-                  <td>80331</td>
-                  <td>Munchen</td>
-                  <td>Im tal 6</td>
-                  <td>02/11/12</td>
-                  <td>91.08%</td>
+                  <td>
+                    <button type="button" class="open-msg">WIP</button>
+                  </td>
+                  <td>10000 Port Said - El Corniche Atef Sadai St</td>
+                  <td>325</td>
+                  <td>2202843</td>
+                  <td>10000</td>
+                  <td>Port Said</td>
+                  <td>El Corniche Atef Sadai St</td>
+                  <td>29/02/2020</td>
+                  <td>88.1%</td>
                 </tr>
-                <tr>
+                 <tr  class="disabled">
                   <td>
-                    <button type="button" class="open-att"></button><button type="button" class="open-msg"></button>
+                    <button type="button" class="open-att"><i class="far fa-clock"></i></button>
                   </td>
-                  <td>80112 Munchen - (I) - Im Tal 6</td>
-                  <td>Ops Mgr Waltl</td>
-                  <td>4460780</td>
-                  <td>132</td>
-                  <td>80331</td>
-                  <td>Munchen</td>
-                  <td>Im tal 6</td>
-                  <td>02/11/12</td>
-                  <td>91.08%</td>
+                  <td>
+                    <button type="button" class="open-msg">WIP</button>
+                  </td>
+                  <td>10000 Port Said - El Corniche Atef Sadai St</td>
+                  <td>325</td>
+                  <td>2202843</td>
+                  <td>10000</td>
+                  <td>Port Said</td>
+                  <td>El Corniche Atef Sadai St</td>
+                  <td>29/02/2020</td>
+                  <td>88.1%</td>
                 </tr>
-                <tr>
+  <tr>
                   <td>
-                    <button type="button" class="open-att"></button><button type="button" class="open-msg"></button>
+                    <button type="button" class="open-att"><i class="fas fa-download"></i></button>
                   </td>
-                  <td>80112 Munchen - (I) - Im Tal 6</td>
-                  <td>Ops Mgr Waltl</td>
-                  <td>4460780</td>
-                  <td>132</td>
-                  <td>80331</td>
-                  <td>Munchen</td>
-                  <td>Im tal 6</td>
-                  <td>02/11/12</td>
-                  <td>91.08%</td>
+                  <td>
+                    <button type="button" class="open-msg"><i class="fas fa-pen"></i></button>
+                  </td>
+                  <td>10000 Port Said - El Corniche Atef Sadai St</td>
+                  <td>325</td>
+                  <td>2202843</td>
+                  <td>10000</td>
+                  <td>Port Said</td>
+                  <td>El Corniche Atef Sadai St</td>
+                  <td>29/02/2020</td>
+                  <td>88.1%</td>
                 </tr>
-                <tr>
+                 <tr>
                   <td>
-                    <button type="button" class="open-att"></button><button type="button" class="open-msg"></button>
+                    <button type="button" class="open-att"><i class="fas fa-download"></i></button>
                   </td>
-                  <td>80112 Munchen - (I) - Im Tal 6</td>
-                  <td>Ops Mgr Waltl</td>
-                  <td>4460780</td>
-                  <td>132</td>
-                  <td>80331</td>
-                  <td>Munchen</td>
-                  <td>Im tal 6</td>
-                  <td>02/11/12</td>
-                  <td>91.08%</td>
+                  <td>
+                    <button type="button" class="open-msg"><i class="fas fa-pen"></i></button>
+                  </td>
+                  <td>10000 Port Said - El Corniche Atef Sadai St</td>
+                  <td>325</td>
+                  <td>2202843</td>
+                  <td>10000</td>
+                  <td>Port Said</td>
+                  <td>El Corniche Atef Sadai St</td>
+                  <td>29/02/2020</td>
+                  <td>88.1%</td>
                 </tr>
-                <tr>
+ <tr class="unread">
                   <td>
-                    <button type="button" class="open-att"></button><button type="button" class="open-msg"></button>
+                    <button type="button" class="open-att"><i class="fas fa-download"></i></button>
                   </td>
-                  <td>80112 Munchen - (I) - Im Tal 6</td>
-                  <td>Ops Mgr Waltl</td>
-                  <td>4460780</td>
-                  <td>132</td>
-                  <td>80331</td>
-                  <td>Munchen</td>
-                  <td>Im tal 6</td>
-                  <td>02/11/12</td>
-                  <td>91.08%</td>
+                  <td>
+                    <button type="button" class="open-msg"><i class="fas fa-comment-dots"></i></button>
+                  </td>
+                  <td>10000 Port Said - El Corniche Atef Sadai St</td>
+                  <td>325</td>
+                  <td>2202843</td>
+                  <td>10000</td>
+                  <td>Port Said</td>
+                  <td>El Corniche Atef Sadai St</td>
+                  <td>29/02/2020</td>
+                  <td>88.1%</td>
                 </tr>
-                <tr>
+ <tr>
                   <td>
-                    <button type="button" class="open-att"></button><button type="button" class="open-msg"></button>
+                    <button type="button" class="open-att"><i class="fas fa-download"></i></button>
                   </td>
-                  <td>80112 Munchen - (I) - Im Tal 6</td>
-                  <td>Ops Mgr Waltl</td>
-                  <td>4460780</td>
-                  <td>132</td>
-                  <td>80331</td>
-                  <td>Munchen</td>
-                  <td>Im tal 6</td>
-                  <td>02/11/12</td>
-                  <td>91.08%</td>
+                  <td>
+                    <button type="button" class="open-msg"><i class="fas fa-pen"></i></button>
+                  </td>
+                  <td>10000 Port Said - El Corniche Atef Sadai St</td>
+                  <td>325</td>
+                  <td>2202843</td>
+                  <td>10000</td>
+                  <td>Port Said</td>
+                  <td>El Corniche Atef Sadai St</td>
+                  <td>29/02/2020</td>
+                  <td>88.1%</td>
                 </tr>
-                <tr>
+<tr class="unread">
                   <td>
-                    <button type="button" class="open-att"></button><button type="button" class="open-msg"></button>
+                    <button type="button" class="open-att"><i class="fas fa-download"></i></button>
                   </td>
-                  <td>80112 Munchen - (I) - Im Tal 6</td>
-                  <td>Ops Mgr Waltl</td>
-                  <td>4460780</td>
-                  <td>132</td>
-                  <td>80331</td>
-                  <td>Munchen</td>
-                  <td>Im tal 6</td>
-                  <td>02/11/12</td>
-                  <td>91.08%</td>
+                  <td>
+                    <button type="button" class="open-msg"><i class="fas fa-comment-dots"></i></button>
+                  </td>
+                  <td>10000 Port Said - El Corniche Atef Sadai St</td>
+                  <td>325</td>
+                  <td>2202843</td>
+                  <td>10000</td>
+                  <td>Port Said</td>
+                  <td>El Corniche Atef Sadai St</td>
+                  <td>29/02/2020</td>
+                  <td>88.1%</td>
                 </tr>
-                <tr>
+ <tr>
                   <td>
-                    <button type="button" class="open-att"></button><button type="button" class="open-msg"></button>
+                    <button type="button" class="open-att"><i class="fas fa-download"></i></button>
                   </td>
-                  <td>80112 Munchen - (I) - Im Tal 6</td>
-                  <td>Ops Mgr Waltl</td>
-                  <td>4460780</td>
-                  <td>132</td>
-                  <td>80331</td>
-                  <td>Munchen</td>
-                  <td>Im tal 6</td>
-                  <td>02/11/12</td>
-                  <td>91.08%</td>
+                  <td>
+                    <button type="button" class="open-msg"><i class="far fa-comment-dots"></i></button>
+                  </td>
+                  <td>10000 Port Said - El Corniche Atef Sadai St</td>
+                  <td>325</td>
+                  <td>2202843</td>
+                  <td>10000</td>
+                  <td>Port Said</td>
+                  <td>El Corniche Atef Sadai St</td>
+                  <td>29/02/2020</td>
+                  <td>88.1%</td>
+                </tr>
+<tr>
+                  <td>
+                    <button type="button" class="open-att"><i class="fas fa-download"></i></button>
+                  </td>
+                  <td>
+                    <button type="button" class="open-msg"><i class="far fa-comment-dots"></i></button>
+                  </td>
+                  <td>10000 Port Said - El Corniche Atef Sadai St</td>
+                  <td>325</td>
+                  <td>2202843</td>
+                  <td>10000</td>
+                  <td>Port Said</td>
+                  <td>El Corniche Atef Sadai St</td>
+                  <td>29/02/2020</td>
+                  <td>88.1%</td>
+                </tr>
+<tr class="unread">
+                  <td>
+                    <button type="button" class="open-att"><i class="fas fa-download"></i></button>
+                  </td>
+                  <td>
+                    <button type="button" class="open-msg"><i class="fas fa-comment-dots"></i></button>
+                  </td>
+                  <td>10000 Port Said - El Corniche Atef Sadai St</td>
+                  <td>325</td>
+                  <td>2202843</td>
+                  <td>10000</td>
+                  <td>Port Said</td>
+                  <td>El Corniche Atef Sadai St</td>
+                  <td>29/02/2020</td>
+                  <td>88.1%</td>
+                </tr>
+ <tr>
+                  <td>
+                    <button type="button" class="open-att"><i class="fas fa-download"></i></button>
+                  </td>
+                  <td>
+                    <button type="button" class="open-msg"><i class="far fa-comment-dots"></i></button>
+                  </td>
+                  <td>10000 Port Said - El Corniche Atef Sadai St</td>
+                  <td>325</td>
+                  <td>2202843</td>
+                  <td>10000</td>
+                  <td>Port Said</td>
+                  <td>El Corniche Atef Sadai St</td>
+                  <td>29/02/2020</td>
+                  <td>88.1%</td>
+                </tr>
+<tr>
+                  <td>
+                    <button type="button" class="open-att"><i class="fas fa-download"></i></button>
+                  </td>
+                  <td>
+                    <button type="button" class="open-msg"><i class="far fa-comment-dots"></i></button>
+                  </td>
+                  <td>10000 Port Said - El Corniche Atef Sadai St</td>
+                  <td>325</td>
+                  <td>2202843</td>
+                  <td>10000</td>
+                  <td>Port Said</td>
+                  <td>El Corniche Atef Sadai St</td>
+                  <td>29/02/2020</td>
+                  <td>88.1%</td>
                 </tr>
               </tbody>
             </table>
+<button class="btn-load-more">Load more</button>
           </div>
           <div class="box-menu">
             <!-- <button class="refresh"></button>
@@ -393,12 +478,12 @@
             <ul class="box-menu-filters">
               <li class="dropdown dropup">
                 <button class="clickable">
-                  From <strong>2 (2011/2012)</strong>
+                  From <strong>02/20</strong> <i class="fas fa-chevron-down"></i>
                 </button>
               </li>
               <li class="dropdown dropup">
                 <button class="clickable">
-                  To <strong>2 (2011/2012)</strong>
+                  To <strong>02/20</strong> <i class="fas fa-chevron-down"></i>
                 </button>
               </li>
               <li>
@@ -416,8 +501,8 @@
               <i class="far fa-file-alt"></i><span>Inquiry Manager</span>
             </h2>
             <div class="box-actions">
-              <button type="button" class="inline-button maxsize">View more Checks <i class="fas fa-plus"></i></button>
-              <button type="button" class="inline-button maxsize active">View less Checks <i
+              <button type="button" class="inline-button maxsize">View more Inquiries <i class="fas fa-plus"></i></button>
+              <button type="button" class="inline-button maxsize active">View less Inquiries <i
                   class="fas fa-minus"></i></button>
             </div>
 

@@ -43,6 +43,9 @@ table.table {
   tbody {
     font-size: 0.875rem;
     tr {
+      &.disabled {
+        opacity: 0.6;
+      }
       margin: 0 15px;
       padding: 4px 8px;
       height: 28px;

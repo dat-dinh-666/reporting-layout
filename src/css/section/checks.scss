@@ -1,0 +1,126 @@
+section#checks {
+  table.table {
+    tr {
+      &:hover {
+        outline: 1px solid #f2a9ab;
+      }
+      td:last-child {
+        font-weight: bold;
+      }
+    }
+  }
+  .box-teaser {
+    display: flex;
+
+    .checks-stats {
+      flex-basis: 50%;
+      display: flex;
+      .chart {
+        width: 50%;
+        img {
+          width: 300px;
+        }
+      }
+      .checks-search {
+        margin-top: 17px;
+        font-size: 0.875rem;
+        line-height: 1.43;
+        color: var(--color-text-light);
+        label {
+          margin-bottom: 17px;
+          display: block;
+          opacity: 0.6;
+        }
+        .searchbox {
+          position: relative;
+          height: 35px;
+          border: solid 1px rgba(58, 67, 74, 0.4);
+          background-color: rgba(58, 67, 74, 0.07);
+          border-radius: 2px;
+          svg {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            inset: 8px;
+            opacity: 0.6;
+            padding: 3px;
+          }
+          input[type="text"] {
+            border: none;
+            margin-left: 32px;
+            padding: 8px 0;
+            letter-spacing: -0.15px;
+            opacity: 0.6;
+            background: none;
+          }
+          input[type="submit"] {
+            height: 36px;
+            padding: 8px 12px;
+            border-radius: 2px;
+            background-color: var(--color-text-light);
+            border: 0;
+            color: var(--white);
+          }
+        }
+      }
+    }
+
+    table.table {
+      flex-basis: 50%;
+    }
+  }
+
+  .box-full {
+    button {
+      border: 0;
+      padding: 0;
+      background: none;
+      cursor: pointer;
+    }
+    table.table {
+      margin-top: 20px;
+      thead {
+        tr {
+          th {
+            font-size: 0.875rem;
+            line-height: 1.43;
+            color: var(--color-text-light);
+            opacity: 0.6;
+            font-weight: normal;
+            text-align: start;
+            padding-left: 14px;
+          }
+        }
+      }
+      tbody {
+        tr {
+          svg {
+            color: var(--color-text-light);
+          }
+          td {
+            &:last-child,
+            &:first-child {
+              border: 0;
+            }
+          }
+          &.unread {
+            td {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+    .btn-load-more {
+      color: var(--color-text-light);
+      font-size: 0.875rem;
+      line-height: 1.43;
+      font-weight: bold;
+      display: block;
+      margin: 30px auto 0;
+      padding: 8px 16px;
+      border: 1px solid var(--color-text-light);
+      border-radius: 3px;
+    }
+  }
+}
