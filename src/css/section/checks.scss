@@ -3,6 +3,7 @@ section#checks {
     tr {
       &:hover {
         outline: 1px solid #f2a9ab;
+        outline-offset: -1px;
       }
       td:last-child {
         font-weight: bold;

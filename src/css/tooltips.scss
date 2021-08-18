@@ -1,0 +1,27 @@
+%base-styles {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  &[data-placement^="top"] > .tippy-arrow::before {
+    border-top-color: #fff;
+  }
+  &[data-placement^="left"] > .tippy-arrow::before {
+    border-left-color: #fff;
+  }
+  &[data-placement^="right: ;"] > .tippy-arrow::before {
+    border-right-color: #fff;
+  }
+  &[data-placement^="bottom"] > .tippy-arrow::before {
+    border-bottom-color: #fff;
+  }
+}
+
+.tippy-box[data-theme~="checks"] {
+  @extend %base-styles;
+  color: rgba($color: #3a434a, $alpha: 0.6);
+}
+
+.tippy-box[data-theme~="unread"] {
+  @extend %base-styles;
+  color: #3a434a;
+}
