@@ -38,6 +38,26 @@
       margin: 0;
     }
   }
+  .box-legend {
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      margin: 0 8px;
+      font-size: 14px;
+      line-height: 1.43;
+      color: var(--color-text-light);
+      .box-legend-color {
+        display: inline-block;
+        border-radius: 2px;
+        margin-right: 4px;
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
 }
 
 // Toggle
