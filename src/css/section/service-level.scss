@@ -1,0 +1,58 @@
+#service {
+  .box-teaser,
+  .box-full {
+    .chart {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      > div {
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .title {
+          text-align: center;
+          color: var(--color-text-light);
+          margin-bottom: 20px;
+          margin-top: auto;
+
+          .subtitle {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .box-full {
+    margin-top: 50px;
+
+    .chart > div {
+      margin: 0 20px;
+      max-width: 180px;
+    }
+  }
+
+  .box-legends {
+    .color {
+      width: 20px;
+      height: 20px;
+      display: block;
+    }
+  }
+
+  .load-more {
+    display: none;
+  }
+
+  &.active {
+    .load-more {
+      display: flex;
+    }
+  }
+}

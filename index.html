@@ -530,7 +530,9 @@
                   </tr>
                 </tbody>
               </table>
-              <button class="btn-load-more">Load more</button>
+              <div class="load-more">
+                <button class="btn-load-more">Load more</button>
+              </div>
             </div>
             <div class="box-menu">
               <!-- <button class="refresh"></button>
@@ -1164,7 +1166,7 @@
                 </li>
                 <li>
                   <button class="clickable">
-                    Location <strong>All</strong>
+                    Criteria <strong>All</strong>
                   </button>
                 </li>
               </ul>
@@ -1173,113 +1175,150 @@
 
           <section id="service" class="box">
             <div class="box-header">
+              <h2><i class="fas fa-check"></i><span>Service Level</span></h2>
               <div class="box-actions">
-                <button type="button" class="help"></button>
-                <button type="button" class="maxsize"></button>
-              </div>
-              <h2><i class="boxicon-service"></i><span>Service Level</span></h2>
-            </div>
-            <div class="box-full">
-              <div class="chart">
-                <img
-                  src="assets/images/temp/service-charts-4.jpg"
-                  alt="chart"
-                />
-              </div>
-              <div class="chart">
-                <div>
-                  <img
-                    src="assets/images/temp/service-charts-5.jpg"
-                    alt="chart"
-                  />
-                </div>
-                <div>
-                  <img
-                    src="assets/images/temp/service-charts-6.jpg"
-                    alt="chart"
-                  />
-                </div>
+                <button type="button" class="inline-button maxsize">
+                  View all services <i class="fas fa-plus"></i>
+                </button>
+                <button type="button" class="inline-button maxsize active">
+                  View less services <i class="fas fa-minus"></i>
+                </button>
               </div>
             </div>
             <div class="box-teaser">
               <div class="chart">
                 <div>
+                  <div class="title">
+                    <div class="subtitle">Overview</div>
+                    <div>Total</div>
+                  </div>
                   <img
-                    src="assets/images/temp/service-charts-1.jpg"
+                    src="assets/images/chart-big.png"
                     alt="chart"
                   />
                 </div>
                 <div>
+                  <div class="title">
+                    <div class="subtitle text-very-high">High</div>
+                    <div>Store Appearance</div>
+                  </div>
                   <img
-                    src="assets/images/temp/service-charts-2.jpg"
+                    src="assets/images/chart-big.png"
                     alt="chart"
                   />
                 </div>
                 <div>
+                  <div class="title">
+                    <div class="subtitle text-very-low">Low</div>
+                    <div>Choosing the Sales</div>
+                  </div>
                   <img
-                    src="assets/images/temp/service-charts-3.jpg"
+                    src="assets/images/chart-big.png"
                     alt="chart"
                   />
-                </div>
-              </div>
-              <div class="charts-legend">
-                <div>
-                  <span class="color red"></span
-                  ><span class="percent">0%-79%</span>
-                </div>
-                <div>
-                  <span class="color yellow"></span
-                  ><span class="percent">80%-90%</span>
-                </div>
-                <div>
-                  <span class="color greenLight"></span
-                  ><span class="percent">90%-95%</span>
-                </div>
-                <div>
-                  <span class="color green"></span
-                  ><span class="percent">95%-100%</span>
                 </div>
               </div>
             </div>
-
             <div class="box-full">
-              <div class="box-menu">
-                <button class="refresh"></button>
-                <div class="box-menu-actions">
-                  <button type="button" class="fullsize"></button>
-                  <button type="button" class="settings"></button>
-                  <button type="button" class="send"></button>
+              <div class="chart">
+                <div>
+                  <div class="title">
+                    <div>Welcome</div>
+                  </div>
+                  <img
+                    src="assets/images/chart-small.png"
+                    alt="chart"
+                  />
                 </div>
-                <ul class="box-menu-filters">
-                  <li class="dropdown dropup">
-                    <a href="#"
-                      ><span>Cycle From</span><span>2 (2011/2012)</span
-                      ><b class="caret"></b
-                    ></a>
-                  </li>
-                  <li class="dropdown dropup">
-                    <a href="#"
-                      ><span>Cycle To</span><span>2 (2011/2012)</span
-                      ><b class="caret"></b
-                    ></a>
-                  </li>
-                  <li class="dropdown dropup">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                      ><span>Cycle Summary</span><span>None</span
-                      ><b class="caret"></b
-                    ></a>
-                    <div class="dropdown-menu">
-                      <ul>
-                        <li class="active">
-                          <a tabindex="-1" href="#">Cycle Sum 1</a>
-                        </li>
-                        <li><a tabindex="-1" href="#">Cycle Sum 2</a></li>
-                        <li><a tabindex="-1" href="#">Cycle Sum 3</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
+                <div>
+                  <div class="title">
+                    <div>Goodbye</div>
+                  </div>
+                  <img
+                    src="assets/images/chart-small.png"
+                    alt="chart"
+                  />
+                </div>
+                <div>
+                  <div class="title">
+                    <div>Indentifying Customer's Need</div>
+                  </div>
+                  <img
+                    src="assets/images/chart-small.png"
+                    alt="chart"
+                  />
+                </div>
+                <div>
+                  <div class="title">
+                    <div>Handling Customer's Objections</div>
+                  </div>
+                  <img
+                    src="assets/images/chart-small.png"
+                    alt="chart"
+                  />
+                </div>
+                <div>
+                  <div class="title">
+                    <div>Choosing the Sales</div>
+                  </div>
+                  <img
+                    src="assets/images/chart-small.png"
+                    alt="chart"
+                  />
+                </div>
+                <div>
+                  <div class="title">
+                    <div>Welcome</div>
+                  </div>
+                  <img
+                    src="assets/images/chart-small.png"
+                    alt="chart"
+                  />
+                </div>
               </div>
+            </div>
+            <div class="box-legend">
+              <div>
+                <span class="box-legend-color bg-very-low"></span>0 - 74%
+              </div>
+              <div><span class="box-legend-color bg-low"></span>75 - 81%</div>
+              <div>
+                <span class="box-legend-color bg-neutral"></span>82 - 89%
+              </div>
+              <div><span class="box-legend-color bg-high"></span>90 - 96%</div>
+              <div>
+                <span class="box-legend-color bg-very-high"></span>96 - 100%
+              </div>
+            </div>
+            <div class="load-more">
+              <button class="btn-load-more">Load more</button>
+            </div>
+            <div class="box-menu">
+              <!-- <button class="refresh"></button>
+              <div class="box-menu-actions">
+                <button type="button" class="fullsize">
+                  <i class="fas fa-expand-alt"></i>
+                </button>
+                <button type="button" class="settings"></button>
+                <button type="button" class="send"></button>
+              </div> -->
+              <ul class="box-menu-filters">
+                <li class="dropdown dropup">
+                  <button class="clickable">
+                    From <strong>2 (2011/2012)</strong>
+                  </button>
+                </li>
+                <li class="dropdown dropup">
+                  <button class="clickable">
+                    To <strong>2 (2011/2012)</strong>
+                  </button>
+                </li>
+                <li>
+                  <button class="clickable">
+                    Group cycles <strong>All</strong>
+                  </button>
+                </li>
+              </ul>
             </div>
           </section>
 
@@ -1297,240 +1336,6 @@
             </div>
 
             <div class="box-teaser">
-              <!-- <div class="compare-total">
-              <table class="stores">
-                <caption>
-                  Total
-                </caption>
-                <tbody>
-                  <tr>
-                    <td>
-                      <div>
-                        <table class="table">
-                          <caption>
-                            Top Stores
-                          </caption>
-                          <colgroup>
-                            <col />
-                            <col />
-                            <col />
-                            <col />
-                          </colgroup>
-                          <tbody>
-                            <tr class="up">
-                              <td>1</td>
-                              <td>CH 1201 Rugues 23</td>
-                              <td>100</td>
-                              <td><i class="dir"></i></td>
-                            </tr>
-                            <tr class="up">
-                              <td>2</td>
-                              <td>CH 1201 Napoleon 5</td>
-                              <td>94.7</td>
-                              <td><i class="dir"></i></td>
-                            </tr>
-                            <tr class="down">
-                              <td>3</td>
-                              <td>CH 1201 Berliner 4</td>
-                              <td>91.5</td>
-                              <td><i class="dir"></i></td>
-                            </tr>
-                            <tr class="up">
-                              <td>4</td>
-                              <td>CH 1201 Concorde 8</td>
-                              <td>90.1</td>
-                              <td><i class="dir"></i></td>
-                            </tr>
-                            <tr class="up">
-                              <td>5</td>
-                              <td>CH 1201 St German 3</td>
-                              <td>86.2</td>
-                              <td><i class="dir"></i></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </td>
-                    <td>
-                      <div>
-                        <table class="table">
-                          <caption>
-                            Bottom Stores
-                          </caption>
-                          <colgroup>
-                            <col />
-                            <col />
-                            <col />
-                            <col />
-                          </colgroup>
-                          <tbody>
-                            <tr class="up">
-                              <td>1</td>
-                              <td>CH 1201 Rugues 23</td>
-                              <td>64.1</td>
-                              <td><i class="dir"></i></td>
-                            </tr>
-                            <tr class="up">
-                              <td>2</td>
-                              <td>CH 1201 Napoleon 5</td>
-                              <td>54.7</td>
-                              <td><i class="dir"></i></td>
-                            </tr>
-                            <tr class="down">
-                              <td>3</td>
-                              <td>CH 1201 Berliner 4</td>
-                              <td>52.4</td>
-                              <td><i class="dir"></i></td>
-                            </tr>
-                            <tr class="up">
-                              <td>4</td>
-                              <td>CH 1201 Concorde 8</td>
-                              <td>48.1</td>
-                              <td><i class="dir"></i></td>
-                            </tr>
-                            <tr class="up">
-                              <td>5</td>
-                              <td>CH 1201 St German 3</td>
-                              <td>32.2</td>
-                              <td><i class="dir"></i></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="compare-data">
-              <div id="compareNav">
-                <ul>
-                  <li><a href="#">Farewell</a></li>
-                  <li><a href="#" class="active">Sales Competence</a></li>
-                  <li><a href="#">Introducing</a></li>
-                  <li><a href="#">Criteria 3</a></li>
-                  <li><a href="#">Criteria 4</a></li>
-                  <li><a href="#">Criteria 5</a></li>
-                  <li><a href="#">Criteria 6</a></li>
-                  <li><a href="#">Criteria 7</a></li>
-                  <li><a href="#">Criteria 8</a></li>
-                  <li><a href="#">Criteria 9</a></li>
-                  <li><a href="#">Criteria 10</a></li>
-                  <li><a href="#">Criteria 11</a></li>
-                  <li><a href="#">Criteria 12</a></li>
-                  <li><a href="#">Criteria 13</a></li>
-                  <li><a href="#">Criteria 14</a></li>
-                  <li><a href="#">Criteria 15</a></li>
-                  <li><a href="#">Criteria 16</a></li>
-                  <li><a href="#">Criteria 17</a></li>
-                  <li><a href="#">Criteria 18</a></li>
-                  <li><a href="#">Criteria 19</a></li>
-                </ul>
-              </div>
-              <div id="slideView">
-                <div></div>
-              </div>
-              <table class="stores">
-                <tbody>
-                  <tr>
-                    <td>
-                      <div>
-                        <table class="table">
-                          <caption>
-                            Top Stores
-                          </caption>
-                          <colgroup>
-                            <col />
-                            <col />
-                            <col />
-                            <col />
-                          </colgroup>
-                          <tbody>
-                            <tr class="up">
-                              <td>1</td>
-                              <td>CH 1201 Rugues 23</td>
-                              <td>100</td>
-                              <td><i class="dir"></i></td>
-                            </tr>
-                            <tr class="up">
-                              <td>2</td>
-                              <td>CH 1201 Napoleon 5</td>
-                              <td>94.7</td>
-                              <td><i class="dir"></i></td>
-                            </tr>
-                            <tr class="down">
-                              <td>3</td>
-                              <td>CH 1201 Berliner 4</td>
-                              <td>91.5</td>
-                              <td><i class="dir"></i></td>
-                            </tr>
-                            <tr class="up">
-                              <td>4</td>
-                              <td>CH 1201 Concorde 8</td>
-                              <td>90.1</td>
-                              <td><i class="dir"></i></td>
-                            </tr>
-                            <tr class="up">
-                              <td>5</td>
-                              <td>CH 1201 St German 3</td>
-                              <td>86.2</td>
-                              <td><i class="dir"></i></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </td>
-                    <td>
-                      <div>
-                        <table class="table">
-                          <caption>
-                            Bottom Stores
-                          </caption>
-                          <colgroup>
-                            <col />
-                            <col />
-                            <col />
-                            <col />
-                          </colgroup>
-                          <tbody>
-                            <tr class="up">
-                              <td>1</td>
-                              <td>CH 1201 Rugues 23</td>
-                              <td>64.1</td>
-                              <td><i class="dir"></i></td>
-                            </tr>
-                            <tr class="up">
-                              <td>2</td>
-                              <td>CH 1201 Napoleon 5</td>
-                              <td>54.7</td>
-                              <td><i class="dir"></i></td>
-                            </tr>
-                            <tr class="down">
-                              <td>3</td>
-                              <td>CH 1201 Berliner 4</td>
-                              <td>52.4</td>
-                              <td><i class="dir"></i></td>
-                            </tr>
-                            <tr class="up">
-                              <td>4</td>
-                              <td>CH 1201 Concorde 8</td>
-                              <td>48.1</td>
-                              <td><i class="dir"></i></td>
-                            </tr>
-                            <tr class="up">
-                              <td>5</td>
-                              <td>CH 1201 St German 3</td>
-                              <td>32.2</td>
-                              <td><i class="dir"></i></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div> -->
               <table class="table detailed">
                 <thead>
                   <tr>
@@ -1853,210 +1658,6 @@
                 </tbody>
               </table>
             </div>
-            <!-- <div class="box-full">
-              <table id="compareTable" class="table detailed">
-                <thead>
-                  <tr>
-                    <th>Level (Checks Number)</th>
-                    <th>Store Appearance</th>
-                    <th>Welcome</th>
-                    <th>Indentifying Customer's Needs</th>
-                    <th>Presenting the Product</th>
-                    <th>Handling Customer's Objections</th>
-                    <th>Closing the Sales</th>
-                    <th>Goodbye</th>
-                    <th>Total</th>
-                    <th>Dev  <span data-deviation><i class="fas fa-info-circle"></i></span></th>
-                  </tr>
-                </thead>
-              <tbody>
-
-                  <tr class="master">
-                    <td><button class="toggle-row"></button></td>
-                    <td>1</td>
-                    <td><span class="name">Douglas Jewelry (1169)</span></td>
-                    <td><b class="y">89.9</b></td>
-                    <td><b class="y">89.9</b></td>
-                    <td><b class="y">89.9</b></td>
-                    <td><b class="y">89.9</b></td>
-                    <td><b class="g">89.9</b></td>
-                    <td><b class="g">89.9</b></td>
-                    <td><b class="g">89.9</b></td>
-                    <td class="up"><span class="value">0.0</span></td>
-                  </tr>
-                  <tr class="details">
-                    <td colspan="11">
-                      <div>
-                        <table>
-                          <tr>
-                            <td></td>
-                            <td>1</td>
-                            <td>
-                              <span class="name">Douglas Jewelry (1169)</span>
-                            </td>
-                            <td><b class="y">89.9</b></td>
-                            <td><b class="y">89.9</b></td>
-                            <td><b class="y">89.9</b></td>
-                            <td><b class="y">89.9</b></td>
-                            <td><b class="g">89.9</b></td>
-                            <td><b class="g">89.9</b></td>
-                            <td><b class="g">89.9</b></td>
-                            <td class="up"><span class="value">0.0</span></td>
-                          </tr>
-                        </table>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="master">
-                    <td><button class="toggle-row"></button></td>
-                    <td>2</td>
-                    <td><span class="name">Douglas Sweets (1347)</span></td>
-                    <td><b class="g">93.2</b></td>
-                    <td><b class="g">93.2</b></td>
-                    <td><b class="g">93.2</b></td>
-                    <td><b class="g">93.2</b></td>
-                    <td><b class="g">93.2</b></td>
-                    <td><b class="g">93.2</b></td>
-                    <td><b class="g">93.2</b></td>
-                    <td class="up"><span class="value">0.0</span></td>
-                  </tr>
-                  <tr class="details">
-                    <td colspan="11">
-                      <div>
-                        <table>
-                          <tr>
-                            <td></td>
-                            <td>2</td>
-                            <td>
-                              <span class="name">Douglas Sweets (1347)</span>
-                            </td>
-                            <td><b class="g">93.2</b></td>
-                            <td><b class="g">93.2</b></td>
-                            <td><b class="g">93.2</b></td>
-                            <td><b class="g">93.2</b></td>
-                            <td><b class="g">93.2</b></td>
-                            <td><b class="g">93.2</b></td>
-                            <td><b class="g">93.2</b></td>
-                            <td class="up"><span class="value">-38.3</span></td>
-                          </tr>
-                        </table>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="master">
-                    <td><button class="toggle-row"></button></td>
-                    <td>3</td>
-                    <td><span class="name">Douglas Perfumery (6967)</span></td>
-                    <td><b class="y">87.3</b></td>
-                    <td><b class="y">87.3</b></td>
-                    <td><b class="y">87.3</b></td>
-                    <td><b class="g">87.3</b></td>
-                    <td><b class="g">87.3</b></td>
-                    <td><b class="g">87.3</b></td>
-                    <td><b class="g">87.3</b></td>
-                    <td class="up"><span class="value">-13.9</span></td>
-                  </tr>
-                  <tr class="details">
-                    <td colspan="11">
-                      <div>
-                        <table>
-                          <tr>
-                            <td></td>
-                            <td>3</td>
-                            <td>
-                              <span class="name">Douglas Perfumery (6967)</span>
-                            </td>
-                            <td><b class="y">87.3</b></td>
-                            <td><b class="y">87.3</b></td>
-                            <td><b class="y">87.3</b></td>
-                            <td><b class="g">87.3</b></td>
-                            <td><b class="g">87.3</b></td>
-                            <td><b class="g">87.3</b></td>
-                            <td><b class="g">87.3</b></td>
-                            <td class="up"><span class="value">-13.9</span></td>
-                          </tr>
-                        </table>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="master">
-                    <td><button class="toggle-row"></button></td>
-                    <td>4</td>
-                    <td><span class="name">Douglas Books (1707)</span></td>
-                    <td><b class="y">89.6</b></td>
-                    <td><b class="y">89.6</b></td>
-                    <td><b class="y">89.6</b></td>
-                    <td><b class="g">89.6</b></td>
-                    <td><b class="g">89.6</b></td>
-                    <td><b class="g">89.6</b></td>
-                    <td><b class="g">89.6</b></td>
-                    <td class="down"><span class="value">6.3</span></td>
-                  </tr>
-                  <tr class="details">
-                    <td colspan="11">
-                      <div>
-                        <table>
-                          <tr>
-                            <td></td>
-                            <td>4</td>
-                            <td>
-                              <span class="name">Douglas Books (1707)</span>
-                            </td>
-                            <td><b class="y">89.6</b></td>
-                            <td><b class="y">89.6</b></td>
-                            <td><b class="y">89.6</b></td>
-                            <td><b class="g">89.6</b></td>
-                            <td><b class="g">89.6</b></td>
-                            <td><b class="g">89.6</b></td>
-                            <td><b class="g">89.6</b></td>
-                            <td class="down"><span class="value">6.3</span></td>
-                          </tr>
-                        </table>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="master">
-                    <td><button class="toggle-row"></button></td>
-                    <td>5</td>
-                    <td><span class="name">Douglas Books (1707)</span></td>
-                    <td><b class="g">92.7</b></td>
-                    <td><b class="g">92.7</b></td>
-                    <td><b class="g">92.7</b></td>
-                    <td><b class="g">92.7</b></td>
-                    <td><b class="g">92.7</b></td>
-                    <td><b class="g">92.7</b></td>
-                    <td><b class="g">92.7</b></td>
-                    <td class="down"><span class="value">10.4</span></td>
-                  </tr>
-                  <tr class="details">
-                    <td colspan="11">
-                      <div>
-                        <table>
-                          <tr>
-                            <td></td>
-                            <td>5</td>
-                            <td>
-                              <span class="name">Douglas Books (1707)</span>
-                            </td>
-                            <td><b class="g">92.7</b></td>
-                            <td><b class="g">92.7</b></td>
-                            <td><b class="g">92.7</b></td>
-                            <td><b class="g">92.7</b></td>
-                            <td><b class="g">92.7</b></td>
-                            <td><b class="g">92.7</b></td>
-                            <td><b class="g">92.7</b></td>
-                            <td class="down">
-                              <span class="value">10.4</span>
-                            </td>
-                          </tr>
-                        </table>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div> -->
-
             <div class="box-legend">
               <div>
                 <span class="box-legend-color bg-very-low"></span>0 - 74%
@@ -2072,12 +1673,6 @@
             </div>
 
             <div class="box-menu">
-              <!-- <button class="refresh"></button>
-              <div class="box-menu-actions">
-                <button type="button" class="fullsize"></button>
-                <button type="button" class="settings"></button>
-                <button type="button" class="send"></button>
-              </div> -->
               <ul class="box-menu-filters">
                 <li class="dropdown dropup">
                   <button class="clickable">
@@ -2091,45 +1686,6 @@
                     <i class="fas fa-chevron-down"></i>
                   </button>
                 </li>
-                <!-- <li class="dropdown dropup">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span>MAGMT Level</span><span>1
-                      Down</span><b class="caret"></b></a>
-                  <div class="dropdown-menu">
-                    <ul>
-                      <li class="active">
-                        <a tabindex="-1" href="#">1 Down</a>
-                      </li>
-                      <li><a tabindex="-1" href="#">2 Down</a></li>
-                      <li><a tabindex="-1" href="#">3 Down</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="dropdown dropup">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span>Cycle Sum</span><span>None</span><b
-                      class="caret"></b></a>
-                  <div class="dropdown-menu">
-                    <ul>
-                      <li class="active">
-                        <a tabindex="-1" href="#">Cycle Sum 1</a>
-                      </li>
-                      <li><a tabindex="-1" href="#">Cycle Sum 2</a></li>
-                      <li><a tabindex="-1" href="#">Cycle Sum 3</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="dropdown dropup">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span>Criteria</span><span>Total</span><b
-                      class="caret"></b></a>
-                  <div class="dropdown-menu">
-                    <ul>
-                      <li class="active">
-                        <a tabindex="-1" href="#">1 Total</a>
-                      </li>
-                      <li><a tabindex="-1" href="#">2 Total</a></li>
-                      <li><a tabindex="-1" href="#">3 Total</a></li>
-                    </ul>
-                  </div>
-                </li> -->
               </ul>
             </div>
           </section>

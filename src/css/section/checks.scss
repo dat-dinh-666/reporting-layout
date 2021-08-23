@@ -68,7 +68,7 @@ section#checks {
   }
 
   .box-full {
-    button {
+    button:not(.btn-load-more) {
       border: 0;
       padding: 0;
       background: none;
@@ -107,17 +107,6 @@ section#checks {
           }
         }
       }
-    }
-    .btn-load-more {
-      color: var(--color-text-light);
-      font-size: 0.875rem;
-      line-height: 1.43;
-      font-weight: bold;
-      display: block;
-      margin: 30px auto 0;
-      padding: 8px 16px;
-      border: 1px solid var(--color-text-light);
-      border-radius: 3px;
     }
   }
 }
