@@ -25,3 +25,8 @@
   @extend %base-styles;
   color: #3a434a;
 }
+
+.tippy-box[data-theme~="deviation"] {
+  @extend %base-styles;
+  color: rgba($color: #3a434a, $alpha: 0.6);
+}

@@ -12,4 +12,9 @@
   --color-select-bg: #f1f2f2;
   --color-select-border: #a7acaf;
   --color-table-select: #f3f3f3;
+
+  --color-very-high: #4dd900;
+  --color-neutral: #e6ba01;
+  --color-low: #f27e01;
+  --color-very-low: #db0101;
 }
