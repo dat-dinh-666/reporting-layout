@@ -1,0 +1,26 @@
+section#result {
+  .result__toggler {
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      width: 77px;
+      height: 30px;
+      font-size: 14px;
+      line-height: 1.43;
+      letter-spacing: -0.15px;
+      color: #8c8c8c;
+      padding: 8px 16px;
+      border: 0;
+      background: none;
+      border-bottom: 2px solid rgba(58, 67, 74, 0.2);
+      cursor: pointer;
+      &.active {
+        color: var(--color-text-light);
+        border-bottom-color: var(--color-text-light);
+        font-weight: bold;
+      }
+    }
+  }
+}
