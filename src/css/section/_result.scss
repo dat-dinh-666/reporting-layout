@@ -23,4 +23,43 @@ section#result {
       }
     }
   }
+  .result {
+    &__trends {
+      .box-teaser {
+        .table.detailed {
+          tr {
+            td {
+              &:first-child {
+                width: 80%;
+                border: none;
+              }
+              &:nth-last-child(2) {
+                color: var(--color-text-light);
+                border: none;
+                font-weight: normal;
+              }
+              span.trend__line {
+                display: inline-block;
+                width: 16px;
+                height: 2px;
+                vertical-align: middle;
+                margin-right: 2px;
+              }
+            }
+            &.heading {
+              td {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+      .chart {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
