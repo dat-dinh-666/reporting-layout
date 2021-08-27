@@ -1,6 +1,6 @@
 import $ from "jquery";
 
-function getClassByValue(value) {
+export function getClassByLegendValue(value) {
   if (value === 0) {
     return "text-default";
   } else if (value <= 74) {
@@ -16,7 +16,7 @@ function getClassByValue(value) {
   }
 }
 
-function getStyleByValue(value) {
+export function getStyleByDevValue(value) {
   let rotate = 0,
     color = "text-high";
 
@@ -37,7 +37,7 @@ function getStyleByValue(value) {
 $("table.table.detailed tbody tr td:not(:first-child,:last-child)").each(
   (_, elem) => {
     const value = +elem.textContent.slice(0, -1);
-    $(elem).addClass(getClassByValue(Math.ceil(value)));
+    $(elem).addClass(getClassByLegendValue(Math.ceil(value)));
   }
 );
 
@@ -45,7 +45,7 @@ $("table.table.detailed tbody tr:not(.details) td:last-child").each(
   (_, elem) => {
     const value = +elem.textContent.slice(0, -1);
 
-    const { color, rotate } = getStyleByValue(value);
+    const { color, rotate } = getStyleByDevValue(value);
 
     $(elem).addClass(color)
       .append(`<svg class=${color} style="width: 18px; height: 18px; transform: rotate(${rotate}deg)" viewBox="0 0 24 24">
