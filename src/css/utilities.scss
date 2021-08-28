@@ -184,6 +184,9 @@ table.table.detailed {
   &-very-low {
     background-color: var(--color-very-low);
   }
+  &-disabled {
+    background-color: var(--sidebar-bg);
+  }
 }
 
 .text {
@@ -204,6 +207,9 @@ table.table.detailed {
   }
   &-very-low {
     color: var(--color-very-low);
+  }
+  &-disabled {
+    background-color: var(--sidebar-bg);
   }
 }
 

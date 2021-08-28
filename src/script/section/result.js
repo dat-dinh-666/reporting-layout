@@ -27,7 +27,7 @@ $(".result__toggler button").each((index, button) => {
 });
 
 const $resultContainer = $("#result.box");
-const $detailsRows = $("table.table.detailed tr.details");
+const $detailsRows = $("#result table.table.detailed tr.details");
 const $boxActionButtons = $("#result .box-header .box-actions button");
 
 $boxActionButtons.each((_, button) => {
