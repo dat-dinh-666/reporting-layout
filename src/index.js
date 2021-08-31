@@ -14,3 +14,4 @@ import "./script/tooltips";
 import "./script/table";
 
 import "./script/section/result";
+import "./script/analysis";

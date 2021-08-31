@@ -1,0 +1,143 @@
+#analysis {
+  .box-teaser {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8px;
+
+    .analysis {
+      display: flex;
+      margin: 0 0 8px;
+      border: 1px solid transparent;
+      transition: 0.2s ease-in-out;
+      padding: 8px;
+      align-items: center;
+
+      &:nth-child(4n + 3),
+      &:nth-child(4n + 4) {
+        background: var(--color-bg-row-darker);
+      }
+
+      &:hover {
+        border: 1px solid rgba(230, 83, 88, 0.5);
+      }
+
+      &.up {
+        .value {
+          color: var(--color-text-success);
+        }
+      }
+
+      &.down {
+        .value {
+          color: var(--color-text-danger);
+        }
+      }
+
+      .value {
+        text-align: center;
+        margin-right: 10px;
+        min-width: 100px;
+
+        div {
+          font-size: 30px;
+          font-weight: bold;
+        }
+
+        span {
+          font-size: 14px;
+        }
+      }
+
+      .desc {
+        font-size: 14px;
+        line-height: 1.4;
+
+        .name {
+          font-weight: bold;
+        }
+
+        .date {
+          color: var(--color-text-light);
+        }
+      }
+    }
+  }
+
+  .box-full {
+    table {
+      width: 100%;
+      border-width: 1px;
+      border-collapse: collapse;
+      background: #f5f5f5;
+      font-size: 14px;
+      text-align: center;
+      color: #3a434a;
+
+      th,
+      td {
+        padding: 6px 30px;
+
+        &:first-child {
+          padding-left: 5px;
+        }
+
+        &:last-child {
+          padding-right: 5px;
+        }
+      }
+
+      thead {
+        background: white;
+      }
+    }
+
+    .left {
+      text-align: left;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .total {
+      background: #ebecec;
+    }
+
+    .collapse-toggle {
+      [data-collapsible-close] {
+        display: none;
+      }
+
+      &.active {
+        [data-collapsible-close] {
+          display: block;
+        }
+
+        [data-collapsible-open] {
+          display: none;
+        }
+      }
+    }
+
+    .collapsible {
+      visibility: hidden;
+      height: 0;
+      display: block;
+
+      &.active {
+        visibility: visible;
+        height: auto;
+        display: table-row;
+      }
+    }
+  }
+
+  [data-expand-all],
+  [data-collapse-all] {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}

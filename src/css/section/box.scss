@@ -22,6 +22,12 @@
       svg {
         margin-left: 8px;
       }
+
+      &:hover {
+        svg {
+          background: var(--red-super-light, rgba(58, 67, 74, 0.03));
+        }
+      }
     }
   }
 
