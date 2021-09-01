@@ -4,6 +4,7 @@ const processingContent = "Your visit report is currently being processed";
 const unreadContent = "Unread Content";
 const deviationContent = "Deviation to the selected organisation";
 const accordionContent = "Open Accordion";
+const downloadDocument = "Download Document";
 
 tippy("[data-processing]", {
   content: processingContent,
@@ -24,5 +25,10 @@ tippy("[data-deviation]", {
 
 tippy("[data-accordion]", {
   content: accordionContent,
+  theme: "unread",
+});
+
+tippy("[data-download-document]", {
+  content: downloadDocument,
   theme: "unread",
 });

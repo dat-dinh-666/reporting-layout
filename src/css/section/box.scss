@@ -97,3 +97,22 @@
     }
   }
 }
+
+// Load More button in .box-full
+.more-data {
+  font-weight: bold;
+  line-height: 1.43;
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  width: 107px;
+  height: 36px;
+  display: block;
+  padding: 8px 16px;
+  margin: 30px auto 0;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 3px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  border: 1px solid var(--color-text-light);
+}
