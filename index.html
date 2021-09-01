@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Reporting Layout</title>
     <meta name="description" content="" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover"
-    />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -4030,24 +4027,43 @@
 
           </section>
 
-          <section id="images" class="box2">
-            <div class="box-header">
+         <section id="images" class="box">
+             <div class="box-header">
+ <h2><i class="fas fa-images"></i><span>Latest Images</span></h2>
               <div class="box-actions">
-                <button type="button" class="help"></button>
-                <button type="button" class="maxsize"></button>
+                <button type="button" class="inline-button maxsize">
+                  <span>View More</span> <i class="fas fa-plus"></i>
+                </button>
+                <button type="button" class="inline-button maxsize active">
+                  <span>View Less</span> <i class="fas fa-minus"></i>
+                </button>
               </div>
-              <h2><i class="boxicon-images"></i><span>Latest Images</span></h2>
             </div>
 
-            <div class="box-full">
-              <div class="image-preview">
-                <img
-                  id="preview"
-                  src="assets/images/temp/gallery/large/1.jpg"
+            <div class="images__filter">
+ <form action="" class="images-search">
+<div class="selectable-wrapper">
+                  <select class="selectable">
+                    <option>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum?</option>
+                    <option>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum?</option>
+                    <option>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum?</option>
+                  </select>
+                        <i class="fas fa-chevron-down"></i>
+                </div>
+
+               <div class="searchbox">
+                 <div class="icon">
+  <i class="fas fa-search fa-flip-horizontal"></i></div>
+                 <input
+                  type="text"
+                  id="iSearch"
+                  placeholder="Type a word or sentence"
                 />
-              </div>
+                <input type="submit" value="Search" id="search-images" /></div>
+              </form>
             </div>
-            <div class="box-teaser">
+
+ <div class="box-teaser">
               <ul id="carousel" class="elastislide-list">
                 <li data-preview="assets/images/temp/gallery/large/1.jpg">
                   <a href="#"
@@ -4133,10 +4149,73 @@
                       alt="image03"
                   /></a>
                 </li>
+  <li data-preview="assets/images/temp/gallery/large/3.jpg">
+                  <a href="#"
+                    ><img
+                      src="assets/images/temp/gallery/small/3.jpg"
+                      alt="image03"
+                  /></a>
+                </li>
+  <li data-preview="assets/images/temp/gallery/large/3.jpg">
+                  <a href="#"
+                    ><img
+                      src="assets/images/temp/gallery/small/3.jpg"
+                      alt="image03"
+                  /></a>
+                </li>
+ <li data-preview="assets/images/temp/gallery/large/3.jpg">
+                  <a href="#"
+                    ><img
+                      src="assets/images/temp/gallery/small/3.jpg"
+                      alt="image03"
+                  /></a>
+                </li>
+  <li data-preview="assets/images/temp/gallery/large/3.jpg">
+                  <a href="#"
+                    ><img
+                      src="assets/images/temp/gallery/small/3.jpg"
+                      alt="image03"
+                  /></a>
+                </li>
+<li data-preview="assets/images/temp/gallery/large/3.jpg">
+                  <a href="#"
+                    ><img
+                      src="assets/images/temp/gallery/small/3.jpg"
+                      alt="image03"
+                  /></a>
+                </li>
+  <li data-preview="assets/images/temp/gallery/large/3.jpg">
+                  <a href="#"
+                    ><img
+                      src="assets/images/temp/gallery/small/3.jpg"
+                      alt="image03"
+                  /></a>
+                </li>
+ <li data-preview="assets/images/temp/gallery/large/3.jpg">
+                  <a href="#"
+                    ><img
+                      src="assets/images/temp/gallery/small/3.jpg"
+                      alt="image03"
+                  /></a>
+                </li>
+  <li data-preview="assets/images/temp/gallery/large/3.jpg">
+                  <a href="#"
+                    ><img
+                      src="assets/images/temp/gallery/small/3.jpg"
+                      alt="image03"
+                  /></a>
+                </li>
               </ul>
             </div>
-
             <div class="box-full">
+              <div class="image-preview">
+                <img
+                  id="preview"
+                  src="assets/images/temp/gallery/large/1.jpg"
+                />
+              </div>
+            </div>
+
               <div class="box-menu">
                 <button class="refresh"></button>
                 <div class="box-menu-actions">
@@ -4159,7 +4238,6 @@
                   </li>
                 </ul>
               </div>
-            </div>
           </section>
 
           <section id="contact" class="box">
