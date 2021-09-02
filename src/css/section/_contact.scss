@@ -1,0 +1,47 @@
+section#contact {
+  .box-teaser {
+    .contact {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--color-text-light);
+      font-size: 0.875rem;
+      line-height: 1.43;
+      letter-spacing: -0.15px;
+      &__image {
+        border-radius: 50%;
+        display: block;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        object-position: center;
+        flex: 0 0 100px;
+      }
+      &__info {
+        flex-grow: 2;
+        .name {
+          font-weight: bold;
+        }
+      }
+      &__social {
+        flex-grow: 2;
+        a {
+          text-decoration: none;
+          color: var(--color-text-danger);
+          font-weight: bold;
+          letter-spacing: normal;
+          svg {
+            vertical-align: middle;
+            width: 13px;
+            height: 13px;
+            padding: 1.5px;
+          }
+        }
+      }
+      &__message {
+        flex-grow: 3;
+        margin-top: 0;
+      }
+    }
+  }
+}
