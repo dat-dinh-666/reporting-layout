@@ -1,34 +1,23 @@
 import tippy from "tippy.js";
+import $ from "jquery";
 
-const processingContent = "Your visit report is currently being processed";
-const unreadContent = "Unread Content";
-const deviationContent = "Deviation to the selected organisation";
-const accordionContent = "Open Accordion";
-const downloadDocument = "Download Document";
-
-tippy("[data-processing]", {
-  content: processingContent,
-  theme: "checks",
-  maxWidth: 200,
-});
-
-tippy("[data-unread]", {
-  content: unreadContent,
-  theme: "unread",
-});
-
-tippy("[data-deviation]", {
-  content: deviationContent,
-  theme: "deviation",
-  maxWidth: 160,
-});
-
-tippy("[data-accordion]", {
-  content: accordionContent,
-  theme: "unread",
-});
-
-tippy("[data-download-document]", {
-  content: downloadDocument,
-  theme: "unread",
-});
+(function (tippy, $) {
+  $("[data-tooltip]").each(function (index, elem) {
+    const tooltip = $(elem).data("tooltip");
+    let tooltip_theme = $(elem).data("tooltip-theme");
+    if (!tooltip_theme) {
+      tooltip_theme = "normal";
+    }
+    const tooltip_opts_serialized = $(elem).data("tooltip-opts") ?? "{}";
+    try {
+      const tooltip_opts = JSON.parse(tooltip_opts_serialized);
+      tippy(elem, {
+        content: tooltip,
+        theme: tooltip_theme,
+        ...tooltip_opts,
+      });
+    } catch (e) {
+      console.error(e);
+    }
+  });
+})(tippy, $);

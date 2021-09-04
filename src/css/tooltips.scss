@@ -16,17 +16,12 @@
   }
 }
 
-.tippy-box[data-theme~="checks"] {
+.tippy-box[data-theme~="light"] {
   @extend %base-styles;
   color: rgba($color: #3a434a, $alpha: 0.6);
 }
 
-.tippy-box[data-theme~="unread"] {
+.tippy-box[data-theme~="normal"] {
   @extend %base-styles;
   color: #3a434a;
-}
-
-.tippy-box[data-theme~="deviation"] {
-  @extend %base-styles;
-  color: rgba($color: #3a434a, $alpha: 0.6);
 }

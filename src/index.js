@@ -18,4 +18,5 @@ import "./script/table";
 
 import "./script/section/result";
 import "./script/analysis";
-import "./script/section/images";
+
+import "./script/selectize";

@@ -5,49 +5,8 @@ section#images {
       justify-content: space-between;
       color: var(--color-text-light);
       .selectable-wrapper {
+        width: auto;
         flex-basis: 50%;
-        max-width: 579px;
-        position: relative;
-        height: 37px;
-        svg {
-          position: absolute;
-          width: 14px;
-          height: 14px;
-          padding: 3px;
-          transform: translate3d(-150%, 50%, 0);
-        }
-        // Custom selectize styles
-        .selectize-control.selectable {
-          padding: 0;
-          .selectize-input {
-            box-shadow: none;
-            border: none;
-            line-height: 1.43;
-            background-color: inherit;
-            input {
-              &::selection {
-                background-color: initial;
-              }
-            }
-          }
-          .selectize-dropdown {
-            width: calc(100% + 2px) !important;
-            left: -1px !important;
-            padding: 0;
-            .selectize-dropdown-content {
-              .option {
-                &:hover {
-                  cursor: pointer;
-                }
-                // &.selected,
-                &.active {
-                  color: var(--color-text-light);
-                  background-color: var(--color-option-bg-hover, #e3e5e5);
-                }
-              }
-            }
-          }
-        }
       }
       .searchbox {
         flex-basis: 50%;
