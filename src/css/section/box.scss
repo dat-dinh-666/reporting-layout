@@ -116,3 +116,32 @@
   box-sizing: border-box;
   border: 1px solid var(--color-text-light);
 }
+
+// Show down arrow when toggle .active
+
+.box {
+  &.active {
+    .box-menu {
+      ul {
+        li {
+          button {
+            svg {
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+  .box-menu {
+    ul {
+      li {
+        button {
+          svg {
+            visibility: hidden;
+          }
+        }
+      }
+    }
+  }
+}
