@@ -8,6 +8,7 @@ section#images {
         flex-basis: 50%;
         max-width: 579px;
         position: relative;
+        height: 37px;
         svg {
           position: absolute;
           width: 14px;
@@ -15,10 +16,41 @@ section#images {
           padding: 3px;
           transform: translate3d(-150%, 50%, 0);
         }
+        // Custom selectize styles
+        .selectize-control.selectable {
+          padding: 0;
+          .selectize-input {
+            box-shadow: none;
+            border: none;
+            line-height: 1.43;
+            background-color: inherit;
+            input {
+              &::selection {
+                background-color: initial;
+              }
+            }
+          }
+          .selectize-dropdown {
+            width: calc(100% + 2px) !important;
+            left: -1px !important;
+            padding: 0;
+            .selectize-dropdown-content {
+              .option {
+                &:hover {
+                  cursor: pointer;
+                }
+                // &.selected,
+                &.active {
+                  color: var(--color-text-light);
+                  background-color: var(--color-option-bg-hover, #e3e5e5);
+                }
+              }
+            }
+          }
+        }
       }
       .searchbox {
         flex-basis: 50%;
-        height: 35px;
         border: solid 1px rgba(58, 67, 74, 0.4);
         background-color: rgba(58, 67, 74, 0.07);
         border-radius: 2px;
