@@ -62,7 +62,7 @@
         input[type="submit"] {
           flex-basis: 84px;
           width: 15%;
-          height: 36px;
+          height: calc(100% + 1px);
           padding: 8px 12px;
           border-radius: 2px;
           background-color: var(--color-text-light);
