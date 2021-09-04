@@ -19,12 +19,12 @@
     }
 
     .maxsize {
-      svg {
+      i {
         margin-left: 8px;
       }
 
       &:hover {
-        svg {
+        i {
           background: var(--red-super-light, rgba(58, 67, 74, 0.03));
         }
       }
@@ -125,7 +125,7 @@
       ul {
         li {
           button {
-            svg {
+            i {
               visibility: visible;
             }
           }
@@ -137,7 +137,7 @@
     ul {
       li {
         button {
-          svg {
+          i {
             visibility: hidden;
           }
         }

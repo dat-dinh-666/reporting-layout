@@ -1,0 +1,42 @@
+.checkbox {
+  position: relative;
+  padding: 4px 0;
+  padding-left: 20px;
+
+  input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+  }
+
+  input[type="checkbox"]:checked + label:before {
+    font-weight: 900;
+    content: "\f00c";
+    background: black;
+    color: white;
+  }
+
+  label:before {
+    content: "";
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-size: 8px;
+    text-align: center;
+    top: 4px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid black;
+    line-height: 13px;
+  }
+
+  label {
+    font-size: 14px;
+    line-height: 14px;
+    display: block;
+    color: var(--color-text-light);
+  }
+}

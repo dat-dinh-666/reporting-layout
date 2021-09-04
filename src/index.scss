@@ -4,6 +4,10 @@
 @import "css/tooltips.scss";
 @import "css/utilities";
 @import "css/global";
+@import "css/input";
+@import "css/fonts";
+
+// Section
 @import "css/section/_sidebar";
 @import "css/section/box";
 @import "css/section/topbar";
@@ -22,6 +26,8 @@
 @import "css/section/_images";
 @import "css/section/_contact";
 @import "css/section/_map";
+
+@import "~bootstrap-4-grid/scss/grid.scss";
 
 body {
   font-family: "Noto Sans", Arial, Helvetica, sans-serif;

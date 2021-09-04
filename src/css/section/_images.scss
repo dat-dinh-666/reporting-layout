@@ -8,7 +8,7 @@ section#images {
         flex-basis: 50%;
         max-width: 579px;
         position: relative;
-        svg {
+        i {
           position: absolute;
           width: 14px;
           height: 14px;
@@ -29,7 +29,7 @@ section#images {
           flex-basis: 20px;
           display: grid;
           place-items: center;
-          svg {
+          i {
             width: 14px;
             height: 14px;
             padding: 3px;

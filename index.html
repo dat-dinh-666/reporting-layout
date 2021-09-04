@@ -406,7 +406,7 @@
                 </tr>
               </tbody>
             </table>
-            <a class="more-data">Load more<a />
+            <a class="more-data">Load more</a>
           </div>
           <div class="box-menu">
             <ul class="box-menu-filters">
@@ -855,7 +855,9 @@
                 </div>
               </div>
             </div>
-            <a class="more-data">Load More</a>
+            <!-- <div>
+              <a class="more-data">Load More</a>
+            </div> -->
           </div>
           <div class="box-full">
             <div class="act-stories">
@@ -904,7 +906,9 @@
                 </div>
               </div>
             </div>
-            <a class="more-data">Load More</a>
+            <div>
+              <a class="more-data">Load More</a>
+            </div>
           </div>
           <div class="box-menu">
             <ul class="box-menu-filters">
@@ -1822,10 +1826,10 @@
           </div>
         </section>
 
- <section id="map" class="box">
+        <section id="map" class="box">
           <div class="box-header">
             <h2><i class="fas fa-map-marker-alt"></i><span>Map Check</span></h2>
-          <div class="box-actions">
+            <div class="box-actions">
               <button type="button" class="inline-button maxsize">
                 <span>View Filters</span> <i class="fas fa-plus"></i>
               </button>
@@ -1839,27 +1843,27 @@
               <div class="world-map">
                 <a href="./location-map.html"><img src="assets/images/temp/world-map.png" alt="World Map" /></a>
               </div>
-               <div class="box-legend">
-              <div>
-                <span class="box-legend-color bg-very-low"></span>0 - 74%
+              <div class="box-legend">
+                <div>
+                  <span class="box-legend-color bg-very-low"></span>0 - 74%
+                </div>
+                <div><span class="box-legend-color bg-low"></span>75 - 81%</div>
+                <div>
+                  <span class="box-legend-color bg-neutral"></span>82 - 89%
+                </div>
+                <div>
+                  <span class="box-legend-color bg-high"></span>90 - 96%
+                </div>
+                <div>
+                  <span class="box-legend-color bg-very-high"></span>96 - 100%
+                </div>
               </div>
-              <div><span class="box-legend-color bg-low"></span>75 - 81%</div>
-              <div>
-                <span class="box-legend-color bg-neutral"></span>82 - 89%
-              </div>
-              <div>
-                <span class="box-legend-color bg-high"></span>90 - 96%
-              </div>
-              <div>
-                <span class="box-legend-color bg-very-high"></span>96 - 100%
-              </div>
-            </div>
             </div>
           </div>
           <div class="box-full">
 
           </div>
-   <div class="box-menu">
+          <div class="box-menu">
             <ul class="box-menu-filters">
               <li class="dropdown dropup">
                 <button class="clickable">
@@ -1873,7 +1877,7 @@
                   <i class="fas fa-chevron-down"></i>
                 </button>
               </li>
- <li class="dropdown dropup">
+              <li class="dropdown dropup">
                 <button class="clickable">
                   Criteria <strong>All</strong>
                   <i class="fas fa-chevron-down"></i>
@@ -3836,13 +3840,13 @@
                 <span class="name">Name Lastname</span><br>
                 <span class="title">Business Manager</span>
               </div>
-  <div class="contact__social">
+              <div class="contact__social">
                 <a href="#" class="email"><i class="far fa-envelope"></i> servicecheck@isc-cx.com</a><br>
                 <a href="#" class="telephone"><i class='fas fa-phone-alt'></i> +41 61 225 42 15</a>
-                </div>
-            <p class="contact__message">
-             Please feel free to contact me with any questions
-            </p>
+              </div>
+              <p class="contact__message">
+                Please feel free to contact me with any questions
+              </p>
             </div>
 
 
@@ -3929,11 +3933,11 @@
               </div>
             </nav>
             <div class="sidebar__inner__actions">
-              <button title="Filters">
+              <button title="Filters" data-micromodal-trigger="modal-filters">
                 <i class="fas fa-sliders-h"></i>
                 <span> Filters</span>
               </button>
-              <button title="Export All">
+              <button title="Export All" data-micromodal-trigger="modal-export-all">
                 <i class="fas fa-share"></i>
                 <span> Export All</span>
               </button>
@@ -4001,17 +4005,156 @@
     </div>
   </div>
 
-  <div class="modal micromodal-slide" id="modal-user" aria-hidden="true">
+  <div class="modal micromodal-slide modal__medium" id="modal-user" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-user-title">
         <header class="modal__header">
-          <h2 class="modal__title" id="modal-user-title">User Modal</h2>
+          <h2 class="modal__title" id="modal-user-title">
+            <i class="far fa-user mr-2"></i>
+            Profile
+          </h2>
           <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
         </header>
         <main class="modal__content" id="modal-user-content">
-          Try hitting the <code>tab</code> key and notice how the focus stays
-          within the modal itself. Also, <code>esc</code> to close modal.
+          <div class="user mb-4">
+            <div>
+              <strong class="font-size-14">Email</strong>
+            </div>
+            <div class="my-3 font-weight-300 font-size-14">h.holzer@internationalservicecheck.com</div>
+            <div>
+              <a href="#change-email">Change Email</a>
+              <span class="tab"></span>
+              <a href="#change-password">Change Password</a>
+            </div>
+          </div>
+          <div class="lang">
+            <div><strong class="font-size-14">Language</strong></div>
+            <div class="selectable-wrapper my-3">
+              <select class="selectable">
+                <option>English</option>
+                <option>Francias</option>
+              </select>
+            </div>
+          </div>
         </main>
+        <footer class="modal__footer">
+          <button class="modal__btn" data-micromodal-close>Cancel</button>
+          <button class="modal__btn modal__btn-primary">Log out</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide modal__medium" id="modal-filters" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <header class="modal__header">
+          <h2 class="modal__title" id="modal-filters-title">
+            <i class="fas fa-sliders-h mr-2"></i>
+            Filters
+          </h2>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header>
+        <main class="modal__content" id="modal-filters-content">
+          <div class="filters">
+            <div class="row">
+              <div class="col-4">
+                <div>
+                  <strong>Visit Type</strong>
+                </div>
+                <div>
+                  <div class="checkbox my-2">
+                    <input type="checkbox" name="visit_type" id="purchase-visit-type">
+                    <label for="purchase-visit-type">Purchase</label>
+                  </div>
+                  <div class="checkbox my-2">
+                    <input type="checkbox" name="visit_type" id="consultation-visit-type">
+                    <label for="consultation-visit-type">Consultation</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div>
+                  <strong>Store Type</strong>
+                </div>
+                <div>
+                  <div class="checkbox my-2">
+                    <input type="checkbox" name="store_type" id="store-in-shop">
+                    <label for="store-in-shop">Store In Shop</label>
+                  </div>
+                  <div class="checkbox my-2">
+                    <input type="checkbox" name="store_type" id="retail">
+                    <label for="retail">Retail</label>
+                  </div>
+                  <div class="checkbox my-2">
+                    <input type="checkbox" name="store_type" id="franchise">
+                    <label for="franchise">Franchise</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div>
+                  <strong>Store Location</strong>
+                </div>
+                <div>
+                  <div class="checkbox my-2">
+                    <input type="checkbox" name="store_location" id="germany-store-location">
+                    <label for="germany-store-location">Germany</label>
+                  </div>
+                  <div class="checkbox my-2">
+                    <input type="checkbox" name="store_location" id="belgium-store-location">
+                    <label for="belgium-store-location">Belgium</label>
+                  </div>
+                  <div class="checkbox my-2">
+                    <input type="checkbox" name="store_location" id="netherlands-store-location">
+                    <label for="netherlands-store-location">Netherlands</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn" data-micromodal-close>Cancel</button>
+          <button class="modal__btn modal__btn-primary">Apply</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide modal__medium" id="modal-export-all" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <header class="modal__header">
+          <h2 class="modal__title" id="modal-export-all-title">
+            <i class="fas fa-share mr-2"></i>
+            Export All
+          </h2>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header>
+        <main class="modal__content" id="modal-export-all-content">
+          <div class="row">
+            <div class="col-4">
+              <div>
+                <strong>Export Type</strong>
+              </div>
+              <div>
+                <div class="checkbox my-2">
+                  <input type="checkbox" name="visit_type" id="purchase-visit-type">
+                  <label for="purchase-visit-type">Purchase</label>
+                </div>
+                <div class="checkbox my-2">
+                  <input type="checkbox" name="visit_type" id="consultation-visit-type">
+                  <label for="consultation-visit-type">Consultation</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn" data-micromodal-close>Cancel</button>
+          <button class="modal__btn modal__btn-primary">Export</button>
+        </footer>
       </div>
     </div>
   </div>
