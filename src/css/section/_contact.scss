@@ -30,11 +30,10 @@ section#contact {
           color: var(--color-text-danger);
           font-weight: bold;
           letter-spacing: normal;
-          svg {
-            vertical-align: middle;
-            width: 13px;
-            height: 13px;
-            padding: 1.5px;
+          font-size: 14px;
+
+          i {
+            margin-right: 4px;
           }
         }
       }

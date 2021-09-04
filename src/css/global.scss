@@ -5,3 +5,18 @@ html {
 html[dir="rtl"] {
   direction: rtl;
 }
+
+body {
+  font-size: 14px;
+}
+
+a {
+  color: var(--color-text-danger);
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.svg-inline--fa {
+  box-sizing: content-box;
+}

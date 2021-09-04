@@ -102,7 +102,7 @@ table.table.detailed {
       td {
         &:last-child {
           border-left: 0;
-          svg {
+          i {
             cursor: pointer;
           }
         }
@@ -135,7 +135,7 @@ table.table.detailed {
           background: none;
           cursor: pointer;
           color: var(--color-text-light);
-          svg {
+          i {
             width: 12px;
             height: 12px;
             padding: 2px;
@@ -148,7 +148,7 @@ table.table.detailed {
           font-weight: bold;
         }
         &:last-child {
-          svg {
+          i {
             vertical-align: bottom;
           }
         }
@@ -236,34 +236,55 @@ table.table.detailed {
   display: inline-block;
 }
 
-.ml-1 {
-  margin-left: 4px;
+.tab {
+  width: 40px;
+  display: inline-block;
 }
 
-.ml-2 {
-  margin-left: 8px;
+@for $i from 1 through 10 {
+  .ma-#{$i} {
+    margin: $i * 4px;
+  }
+
+  .mx-#{$i} {
+    margin-left: $i * 4px;
+    margin-right: $i * 4px;
+  }
+
+  .my-#{$i} {
+    margin-top: $i * 4px;
+    margin-bottom: $i * 4px;
+  }
+
+  .mt-#{$i} {
+    margin-top: $i * 4px;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: $i * 4px;
+  }
+
+  .mr-#{$i} {
+    margin-right: $i * 4px;
+  }
+
+  .ml-#{$i} {
+    margin-left: $i * 4px;
+  }
 }
 
-.ml-3 {
-  margin-left: 12px;
+$font_weights: 300, 400, 500, 600, 700;
+
+@each $font_weight in $font_weights {
+  .font-weight-#{$font_weight} {
+    font-weight: $font_weight;
+  }
 }
 
-.ml-4 {
-  margin-left: 16px;
-}
+$font_sizes: 12, 14, 16, 18, 24, 32, 48;
 
-.mr-1 {
-  margin-right: 4px;
-}
-
-.mr-2 {
-  margin-right: 8px;
-}
-
-.mr-3 {
-  margin-right: 12px;
-}
-
-.mr-4 {
-  margin-right: 16px;
+@each $font_size in $font_sizes {
+  .font-size-#{$font_size} {
+    font-size: #{$font_size}px;
+  }
 }
