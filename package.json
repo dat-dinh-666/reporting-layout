@@ -52,6 +52,7 @@
     "bootstrap-4-grid": "^3.4.0",
     "jquery": "^3.6.0",
     "micromodal": "^0.4.6",
+    "selectize": "^0.12.6",
     "tippy.js": "^6.3.1"
   }
 }
