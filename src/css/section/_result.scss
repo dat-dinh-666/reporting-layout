@@ -63,3 +63,34 @@ section#result {
     }
   }
 }
+
+@media (max-width: $breakpoint_sm) {
+  section#result {
+    &.box {
+      .box-header {
+        h2,
+        .box-actions {
+          white-space: nowrap;
+        }
+
+        .box-actions {
+          i {
+            margin-left: 4px;
+          }
+        }
+      }
+      table.table.detailed {
+        table-layout: fixed;
+        thead,
+        tbody {
+          tr {
+            th,
+            td {
+              width: 220px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -59,7 +59,7 @@ $("table.table.detailed tbody tr:not(.details) td:last-child").each(
 
 $("table.table.detailed tr.master").each((_, row) => {
   $(row)
-    .find("button[data-accordion]")
+    .find("button[data-tooltip='Open Accordion']")
     .each((_, button) => {
       $(button).on("click", () => {
         $(row)
