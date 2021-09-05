@@ -167,6 +167,17 @@
 
 @media (max-width: $breakpoint_sm) {
   .box {
+    .box-legend {
+      div {
+        white-space: nowrap;
+        margin: 0 4px;
+        .box-legend-color {
+          display: inline-block;
+          border-radius: 50%;
+          width: 6px;
+          height: 6px;
+          margin-right: 1px;
+          vertical-align: middle;
     .box-header {
       h2,
       .box-actions {
