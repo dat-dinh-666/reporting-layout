@@ -149,11 +149,17 @@
 
 @media (max-width: $breakpoint_md) {
   .box {
+    padding: 12px 8px;
     .box-menu {
       .box-menu-filters {
         overflow: auto;
         grid-auto-columns: max-content;
         column-gap: 12px;
+        padding-bottom: 5px;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
       }
     }
   }

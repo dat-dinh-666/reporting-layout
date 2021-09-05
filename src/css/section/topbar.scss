@@ -1,6 +1,7 @@
 .app-header {
   .overview {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     background-size: cover;
     padding: 12px;
@@ -38,11 +39,12 @@
     .user {
       padding-right: 24px;
       margin-right: 24px;
-      border-right: 1px solid black;
+      border-right: 1px solid var(--border-light);
     }
   }
 
   .filter {
+    color: var(--color-text-light, #3a434a);
     cursor: pointer;
     i {
       margin-left: 15px;
@@ -86,6 +88,67 @@
       &.down {
         color: var(--color-text-danger, #e65358);
       }
+    }
+  }
+}
+
+@media (max-width: $breakpoint_md) {
+  .app-header {
+    border-bottom: 1px solid var(--border-light);
+
+    .overview {
+      display: flex;
+      justify-content: start;
+
+      .logo {
+        width: 44px;
+        margin-right: 16px;
+      }
+
+      .score_total {
+        margin-right: 0;
+        flex-grow: 1;
+        .value {
+          font-size: 24px;
+        }
+      }
+
+      .score_since {
+        flex-grow: unset;
+      }
+    }
+
+    .account {
+      margin-bottom: 16px;
+      order: -1;
+      flex-basis: 100%;
+
+      .user {
+        padding-right: 16px;
+        margin-right: 16px;
+      }
+
+      .filter {
+        display: flex;
+        align-items: center;
+
+        span {
+          display: inline-block;
+          text-overflow: ellipsis;
+          max-width: 121px;
+          overflow: hidden;
+          white-space: nowrap;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .icx-logo-wrapper {
+      flex-grow: 1;
+    }
+
+    .icx-logo {
+      width: 82px;
     }
   }
 }
