@@ -16,3 +16,14 @@
     }
   }
 }
+
+@media (max-width: $breakpoint_sm) {
+  #nps-drivers {
+    .box-full {
+      .nps-drivers__chart-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 6;
+      }
+    }
+  }
+}
