@@ -2,6 +2,7 @@ section#contact {
   .box-teaser {
     .contact {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       color: var(--color-text-light);

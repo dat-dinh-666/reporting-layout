@@ -42,3 +42,11 @@
     }
   }
 }
+
+@media (max-width: $breakpoint_md) {
+  #act {
+    .act-stories {
+      grid-template-columns: 1fr;
+    }
+  }
+}

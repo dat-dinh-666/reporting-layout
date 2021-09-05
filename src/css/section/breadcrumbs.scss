@@ -13,3 +13,10 @@
     }
   }
 }
+
+@media (max-width: $breakpoint_md) {
+  .breadcrumbs {
+    padding: 0;
+    background: transparent !important;
+  }
+}

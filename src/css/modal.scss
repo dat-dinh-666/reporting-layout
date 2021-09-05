@@ -182,3 +182,9 @@
 .micromodal-slide .modal__overlay {
   will-change: transform;
 }
+
+@media (max-width: $breakpoint_md) {
+  .modal__container {
+    min-width: unset !important;
+  }
+}

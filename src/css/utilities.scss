@@ -341,3 +341,21 @@ $font_sizes: 12, 14, 16, 18, 24, 32, 48;
     font-size: #{$font_size}px;
   }
 }
+
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: block;
+}
+
+@media (max-width: $breakpoint_md) {
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+}
