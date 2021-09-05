@@ -178,6 +178,16 @@
           height: 6px;
           margin-right: 1px;
           vertical-align: middle;
+    .box-header {
+      h2,
+      .box-actions {
+        font-size: 14px;
+        line-height: 1.43;
+        white-space: nowrap;
+      }
+      .maxsize {
+        i {
+          margin-left: 2px;
         }
       }
     }

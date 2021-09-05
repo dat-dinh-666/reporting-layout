@@ -122,3 +122,35 @@
     }
   }
 }
+
+@media (max-width: $breakpoint_sm) {
+  #checks {
+    .box-teaser {
+      .checks-stats {
+        .chart {
+          width: 50%;
+          img {
+            width: 300px;
+          }
+        }
+        .checks-search {
+          .searchbox {
+            display: flex;
+            & > * {
+              display: inline-block;
+            }
+            i {
+              flex-grow: 1;
+            }
+            input[type="text"] {
+              flex-grow: 4;
+            }
+            input[type="submit"] {
+              flex-grow: 2;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -206,26 +206,5 @@
     &__footer {
       display: none;
     }
-
-    .sidebar__badge {
-      font-size: 0.75rem;
-      line-height: 1.125rem;
-      padding: 2px 4px;
-      border-radius: 2px;
-      color: var(--white);
-      &--new {
-        background-color: var(--color-text-success);
-      }
-      &--pro {
-        background-color: var(--color-text-light);
-      }
-    }
-
-    &__item--disabled {
-      pointer-events: none !important;
-      a {
-        opacity: 0.3 !important;
-      }
-    }
   }
 }
