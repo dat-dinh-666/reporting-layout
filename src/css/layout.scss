@@ -19,3 +19,9 @@
     background: white;
   }
 }
+
+@media screen and (max-width: $breakpoint_sm) {
+  .layout {
+    display: block;
+  }
+}
