@@ -41,3 +41,19 @@
     }
   }
 }
+
+@media (max-width: $breakpoint_sm) {
+  #trends {
+    .box-teaser {
+      grid-template-columns: 1fr;
+      column-gap: 0;
+      align-items: start;
+      .chart {
+        margin-bottom: 27px;
+      }
+    }
+    .box-full {
+      margin-top: 27px;
+    }
+  }
+}

@@ -164,3 +164,21 @@
     }
   }
 }
+
+@media (max-width: $breakpoint_sm) {
+  .box {
+    .box-header {
+      h2,
+      .box-actions {
+        font-size: 14px;
+        line-height: 1.43;
+        white-space: nowrap;
+      }
+      .maxsize {
+        i {
+          margin-left: 2px;
+        }
+      }
+    }
+  }
+}
