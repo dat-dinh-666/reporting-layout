@@ -2,8 +2,6 @@ section#contact {
   .box-teaser {
     .contact {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
       align-items: center;
       color: var(--color-text-light);
       font-size: 0.875rem;
@@ -18,29 +16,58 @@ section#contact {
         object-position: center;
         flex: 0 0 100px;
       }
-      &__info {
+      &__text {
         flex-grow: 2;
-        .name {
-          font-weight: bold;
-        }
-      }
-      &__social {
-        flex-grow: 2;
-        a {
-          text-decoration: none;
-          color: var(--color-text-danger);
-          font-weight: bold;
-          letter-spacing: normal;
-          font-size: 14px;
+        margin-left: 16px;
+        display: flex;
+        align-items: center;
+        .contact {
+          margin-left: 16px;
+          &__info {
+            flex-grow: 2;
+            .name {
+              font-weight: bold;
+            }
+          }
+          &__social {
+            flex-grow: 2;
+            a {
+              text-decoration: none;
+              color: var(--color-text-danger);
+              font-weight: bold;
+              letter-spacing: normal;
+              font-size: 14px;
 
-          i {
-            margin-right: 4px;
+              i {
+                margin-right: 4px;
+              }
+            }
+          }
+          &__message {
+            flex-grow: 3;
+            margin-top: 0;
           }
         }
       }
-      &__message {
-        flex-grow: 3;
-        margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: $breakpoint_sm) {
+  section#contact {
+    .box-teaser {
+      .contact {
+        align-items: flex-start;
+        &__text {
+          flex-grow: 1;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          & > * {
+            flex-grow: 1;
+            margin-bottom: 16px;
+          }
+        }
       }
     }
   }

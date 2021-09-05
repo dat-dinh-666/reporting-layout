@@ -53,12 +53,14 @@ section#images {
       width: 100%;
       padding: 0;
       list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
       li {
         display: inline-block;
         width: 102px;
         height: 102px;
-        margin-right: 16px;
-        margin-top: 16px;
         a {
           img {
             width: 100%;
@@ -71,6 +73,23 @@ section#images {
   &.box.active {
     .box-teaser {
       display: none;
+    }
+  }
+}
+
+@media (max-width: $breakpoint_sm) {
+  section#images {
+    .images__filter {
+      display: none;
+    }
+    .box-teaser,
+    .box-full {
+      ul#carousel {
+        li {
+          width: 102px;
+          height: 110px;
+        }
+      }
     }
   }
 }

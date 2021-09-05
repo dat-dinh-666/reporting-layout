@@ -60,3 +60,30 @@
     }
   }
 }
+
+@media (max-width: $breakpoint_sm) {
+  #nps {
+    .box-teaser {
+      .nps__bar {
+        .nps__bar__data {
+          .nps__bar__child {
+            div {
+              margin-bottom: 16px;
+            }
+          }
+        }
+      }
+    }
+    .box-legend {
+      div {
+        .box-legend-color {
+          border-radius: 2px;
+          height: 12px;
+          width: 12px;
+          vertical-align: baseline;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}
