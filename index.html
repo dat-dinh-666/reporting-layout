@@ -3660,10 +3660,10 @@
           <div class="box-teaser">
             <ul id="carousel" class="elastislide-list">
               <li data-preview="assets/images/temp/gallery/large/1.jpg">
-                <a href="#"><img src="assets/images/temp/gallery/small/1.jpg" alt="image01" /></a>
+                <a data-micromodal-trigger="modal-image-gallery"><img src="assets/images/temp/gallery/small/1.jpg" alt="image01" /></a>
               </li>
               <li data-preview="assets/images/temp/gallery/large/2.jpg">
-                <a href="#"><img src="assets/images/temp/gallery/small/2.jpg" alt="image02" /></a>
+                <a data-micromodal-trigger="modal-image-gallery"><img src="assets/images/temp/gallery/small/2.jpg" alt="image02" /></a>
               </li>
               <li data-preview="assets/images/temp/gallery/large/3.jpg">
                 <a href="#"><img src="assets/images/temp/gallery/small/3.jpg" alt="image03" /></a>
@@ -3723,7 +3723,6 @@
           </div>
           <div class="box-full">
             <ul id="carousel" class="elastislide-list">
-
               <li data-preview="assets/images/temp/gallery/large/1.jpg">
                 <a href="#"><img src="assets/images/temp/gallery/small/1.jpg" alt="image01" /></a>
               </li>
@@ -3960,17 +3959,6 @@
 
           </div>
         </section>
-
-        <footer id="app-footer">
-          <p class="copyright">International Service Check &copy; 2012</p>
-          <div class="social">
-            <a href="#"><i class="fb"></i></a>
-            <a href="#"><i class="gplus"></i></a>
-          </div>
-          <button type="button" class="btn">
-            Export <i class="export"></i>
-          </button>
-        </footer>
       </div>
       <div class="sidebar desktop-only">
         <div class="sidebar__inner sidebar__inner--collapsed">
@@ -4064,61 +4052,6 @@
       </div>
     </div>
   </div>
-  <div id="add-location" class="modal">
-    <form action="">
-      <label for="addLocation">Location</label>
-      <input type="text" id="addLocation" placeholder="Type a location…" />
-
-      <label for="addCity">City</label>
-      <input type="text" id="addCity" placeholder="Type a city..." />
-
-      <label for="addPostal">Postal</label>
-      <input type="text" id="addPostal" placeholder="Type a postal code…" />
-
-      <input type="submit" value="Set location" id="set-location" />
-    </form>
-  </div>
-
-  <div id="act-comment" class="modal">
-    <form action="">
-      <textarea type="text" id="actComment" placeholder="Type your comment…"></textarea>
-      <input type="submit" value="Comment" id="submit-comment" />
-    </form>
-    <div class="comments">
-      <h3>Comments</h3>
-      <blockquote>
-        <p>
-          I hink that this will not be the case this time. This comment is
-          totally fine. Lorem ipsum.
-        </p>
-        <footer>
-          <span class="author">Robert</span> -
-          <time datetime="2012-02-17 09:00">5 min ago</time>
-        </footer>
-      </blockquote>
-      <blockquote>
-        <p>
-          I hink that this will not be the case this time. This comment is
-          totally fine. Lorem ipsum.
-        </p>
-        <footer>
-          <span class="author">Robert</span> -
-          <time datetime="2012-02-17 09:00">1 day ago</time>
-        </footer>
-      </blockquote>
-      <blockquote>
-        <p>
-          I hink that this will not be the case this time. This comment is
-          totally fine. Lorem ipsum.
-        </p>
-        <footer>
-          <span class="author">Robert</span> -
-          <time datetime="2012-02-17 09:00">10 September</time>
-        </footer>
-      </blockquote>
-    </div>
-  </div>
-
   <div class="modal micromodal-slide modal__medium" id="modal-user" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-user-title">
@@ -4263,6 +4196,38 @@
                 </div>
               </div>
             </div>
+          </div>
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn" data-micromodal-close>Cancel</button>
+          <button class="modal__btn modal__btn-primary">Export</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide modal__large" id="modal-image-gallery" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-image-gallery-title">
+        <header class="modal__header">
+          <h2 class="modal__title" id="modal-image-gallery-title">
+            <i class="fas fa-share mr-2"></i>
+            Images
+          </h2>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header>
+        <main class="modal__content" id="modal-image-gallery-content">
+          <div>
+            <img src="assets/images/temp/gallery/small/3.jpg" alt=""/>
+          </div>
+          <div>
+            <div>
+              <div>11147 Stockholm - 8 Nackstromsgatan - <strong>88.1%</strong></div>
+              <div>2202734 - 29/02/2020</div>
+            </div>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar luctus placerat. 
+              Sed consectetur ex ipsum, eget semper nunc iaculis vitae. Aenean interdum egestas nisl, at dignissim ipsum vulputate eget.
           </div>
         </main>
         <footer class="modal__footer">
