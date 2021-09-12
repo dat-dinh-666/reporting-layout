@@ -1,4 +1,4 @@
-section#result {
+#result {
   .result__toggler {
     margin: 0 auto 30px;
     display: flex;
@@ -65,7 +65,7 @@ section#result {
 }
 
 @media (max-width: $breakpoint_sm) {
-  section#result {
+  #result {
     &.box {
       .box-header {
         h2,

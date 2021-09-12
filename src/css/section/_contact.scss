@@ -1,4 +1,4 @@
-section#contact {
+#contact {
   .box-teaser {
     .contact {
       display: flex;
@@ -54,7 +54,7 @@ section#contact {
 }
 
 @media (max-width: $breakpoint_sm) {
-  section#contact {
+  #contact {
     .box-teaser {
       .contact {
         align-items: flex-start;

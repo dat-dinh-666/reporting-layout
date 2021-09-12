@@ -1,0 +1,31 @@
+#modal-management-level {
+  .search {
+    position: relative;
+
+    &:after {
+      content: "\f002";
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
+      position: absolute;
+      right: 12px;
+      top: 14px;
+    }
+  }
+  input {
+    padding: 12px 18px;
+    opacity: 1;
+    background: none;
+    border: solid 1px var(--color-select-border);
+    background-color: var(--color-select-bg);
+    border-radius: 2px;
+    line-height: 18px;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  [data-tree] {
+    margin-top: 16px;
+  }
+}

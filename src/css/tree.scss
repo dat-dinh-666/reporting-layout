@@ -1,0 +1,49 @@
+[data-tree] {
+  [data-has-subtree] {
+    [data-tree-subtree] {
+      padding-left: 12px;
+    }
+
+    > [data-tree-row-title] {
+      &:before {
+        content: "\f078";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        margin-right: 12px;
+      }
+    }
+
+    &[data-tree-active] {
+      > [data-tree-subtree] {
+        display: block;
+      }
+
+      > [data-tree-row-title] {
+        &:before {
+          content: "\f077";
+        }
+      }
+    }
+  }
+
+  [data-tree-row] {
+    > [data-tree-subtree] {
+      display: none;
+    }
+
+    > [data-tree-row-title] {
+      cursor: pointer;
+      padding: 12px;
+      border: 1px solid transparent;
+      &[data-tree-hover] {
+        border-color: var(--color-border-active);
+      }
+    }
+
+    &:nth-child(2n + 1) {
+      > [data-tree-row-title] {
+        background: var(--bg-light);
+      }
+    }
+  }
+}

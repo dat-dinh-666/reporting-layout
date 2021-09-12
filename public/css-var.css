@@ -26,4 +26,5 @@
   --color-select-border: #a7acaf;
   --color-border-light: #3a434a;
   --color-border-trans: rgba(58, 67, 74, 0.2);
+  --color-border-active: rgba(230, 83, 88, 0.5);
 }

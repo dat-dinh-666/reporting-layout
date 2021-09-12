@@ -22,3 +22,4 @@ import "./script/analysis";
 import "./script/selectize";
 
 import "./script/tabs";
+import "./script/tree";

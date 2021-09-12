@@ -154,22 +154,14 @@
           <div class="breadcrumbs-inner">
             <div class="path">
               <div class="label desktop-only">Management Level</div>
-              <div class="selectable-wrapper">
-                <select class="selectable">
-                  <option>World Europe</option>
-                  <option>Berlin</option>
-                  <option>Hesse</option>
-                </select>
+              <div class="select-like" data-micromodal-trigger="modal-management-level">
+                Management Level <i class="float-right fas fa-chevron-down"></i>
               </div>
             </div>
             <div class="period selectable-wrapper">
               <div class="label desktop-only">Timeframe</div>
-              <div class="selectable-wrapper">
-                <select class="selectable">
-                  <option>1 (2012/2013)</option>
-                  <option>2 (2011/2012)</option>
-                  <option>3 (2010/2011)</option>
-                </select>
+              <div class="select-like">
+                11/9 <i class="float-right fas fa-chevron-down"></i>
               </div>
             </div>
           </div>
@@ -4298,6 +4290,60 @@
           <div class="image-gallery-modal-footer">
             <div>11147 Stockholm - 8 Nackstromsgatan - <strong>88.1%</strong></div>
             <div>2202734 - 29/02/2020</div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide modal__large" id="modal-management-level" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-management-level-title">
+        <header class="modal__header">
+          <h2 class="modal__title" id="modal-management-level-title">
+            <i class="fas fa-image mr-2"></i>
+            Management Level
+          </h2>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header>
+        <main class="modal__content" id="modal-management-level-content">
+          <div class="search">
+            <input type="text"/>
+          </div>
+          <div data-tree>
+            <div data-tree-row data-has-subtree>
+              <div data-tree-row-title>ISC International</div>
+              <div data-tree-subtree>
+                <div data-tree-row>
+                  <div data-tree-row-title>ISC Africa</div>
+                </div>
+                <div data-tree-row >
+                  <div data-tree-row-title>ISC America</div>
+                </div>
+                <div data-tree-row>
+                  <div data-tree-row-title>ISC Australia Pacific</div>
+                </div>
+                <div data-tree-row data-has-subtree>
+                  <div data-tree-row-title>ISC Europe</div>
+                  <div data-tree-subtree>
+                    <div data-tree-row data-has-subtree>
+                      <div data-tree-row-title>ISC Germany</div>
+                      <div data-tree-subtree>
+                        <div data-tree-row>
+                          <div data-tree-row-title>0167 Dresden - Taschenberg 3</div>
+                        </div>
+                        <div data-tree-row>
+                          <div data-tree-row-title>0167 Dresden - Taschenberg 3</div>
+                        </div>
+                        <div data-tree-row>
+                          <div data-tree-row-title>0167 Dresden - Taschenberg 3</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </main>
       </div>
