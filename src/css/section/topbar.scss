@@ -46,6 +46,8 @@
   .filter {
     color: var(--color-text-light, #3a434a);
     cursor: pointer;
+    font-weight: bold;
+
     i {
       margin-left: 15px;
     }
@@ -149,6 +151,31 @@
 
     .icx-logo {
       width: 82px;
+    }
+  }
+}
+
+#modal-filters-program {
+  #modal-filters-program-content {
+    padding-top: 24px;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+
+    > div {
+      flex-grow: 1;
+    }
+
+    .service {
+      flex-grow: 0;
+
+      .radio {
+        white-space: nowrap;
+      }
     }
   }
 }

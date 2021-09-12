@@ -8,7 +8,6 @@
   --black: #000;
   --red-lighter: #e65358;
   --color-select-bg: #f1f2f2;
-  --color-select-border: #a7acaf;
   --color-table-select: #f3f3f3;
   --red-super-light: rgba(58, 67, 74, 0.03);
 
@@ -22,4 +21,9 @@
 
   --border-light: #ebecec;
   --filter-bg-light: #f9f9f9;
+  --bg-light: rgba(58, 67, 74, 0.03);
+
+  --color-select-border: #a7acaf;
+  --color-border-light: #3a434a;
+  --color-border-trans: rgba(58, 67, 74, 0.2);
 }

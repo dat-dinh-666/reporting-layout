@@ -20,3 +20,5 @@ import "./script/section/result";
 import "./script/analysis";
 
 import "./script/selectize";
+
+import "./script/tabs";

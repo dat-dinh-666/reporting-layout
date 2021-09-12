@@ -42,16 +42,16 @@
               </div>
             </div>
             <time class="desktop-only" datetime="2012-12-12 21:03">Monday 12 December 2012 @ 21:03</time>
-            <div class="account" data-micromodal-trigger="modal-user">
+            <div class="account">
               <div class="icx-logo-wrapper mobile-only">
                 <img class="icx-logo" src="assets/images/icx_logo_small.jpeg" alt="ICX Logo"/>
               </div>
-              <div class="user">
+              <div class="user" data-micromodal-trigger="modal-user">
                 <button>
                   <i class="far fa-user"></i>
                 </button>
               </div>
-              <div class="filter">
+              <div class="filter" data-micromodal-trigger="modal-filters-program">
                 <span>
                   Presentation of Program
                 </span>
@@ -4206,34 +4206,100 @@
     </div>
   </div>
 
+  <div class="modal micromodal-slide modal__large" id="modal-filters-program" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-filters-program-title">
+        <!-- <header class="modal__header">
+          <h2 class="modal__title" id="modal-filters-program-title">
+            <i class="fas fa-share mr-2"></i>
+            Images
+          </h2>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header> -->
+        <main class="modal__content" id="modal-filters-program-content">
+          <div data-tab-wrapper>
+            <div data-tab-header>
+              <div data-active data-tab data-tab-id="program">Program</div>
+              <div data-tab data-tab-id="services">Services</div>
+            </div>
+            <div class="content">
+              <div data-active data-tab-content data-tab-id="program">
+                <div class="selectable-wrapper">
+                  <select class="selectable">
+                    <option>Select Program</option>
+                    <option value="program-1">Program 1</option>
+                    <option value="program-2">Program 2</option>
+                    <option value="program-3">Program 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="service" data-tab-content data-tab-id="services">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="radio my-2">
+                      <input type="radio" name="service" id="mystery-shoping-radio">
+                      <label for="mystery-shoping-radio">Mistery shopping</label>
+                    </div>
+                    <div class="radio my-2">
+                      <input type="radio" name="service" id="voice-2025-radio">
+                      <label for="voice-2025-radio">Voice 2025</label>
+                    </div>
+                    <div class="radio my-2">
+                      <input type="radio" name="service" id="audits-radio">
+                      <label for="audits-radio">Audits</label>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="radio my-2">
+                      <input disabled type="radio" name="service" id="employee-survey-radio">
+                      <label for="mystery-shoping-radio">Employee Survey</label>
+                    </div>
+                    <div class="radio my-2">
+                      <input disabled type="radio" name="service" id="simply-task-radio">
+                      <label for="voice-2025-radio">Simply Task</label>
+                    </div>
+                    <div class="radio my-2">
+                      <input disabled type="radio" name="service" id="fast-insight-radio">
+                      <label for="audits-radio">Fast Insight</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn" data-micromodal-close>Cancel</button>
+          <button class="modal__btn modal__btn-primary">Apply</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
   <div class="modal micromodal-slide modal__large" id="modal-image-gallery" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-image-gallery-title">
         <header class="modal__header">
           <h2 class="modal__title" id="modal-image-gallery-title">
-            <i class="fas fa-share mr-2"></i>
-            Images
+            <i class="fas fa-image mr-2"></i>
+            Latest Images
           </h2>
           <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
         </header>
         <main class="modal__content" id="modal-image-gallery-content">
-          <div>
+          <div class="image-gallery-modal-header">
+            Were all glass surfaces visible from outside the store clean? 
+            <br/>
+            For example windows, displays, glass doors, etc.
+          </div>
+          <div class="image-gallery-modal-image">
             <img src="assets/images/temp/gallery/small/3.jpg" alt=""/>
           </div>
-          <div>
-            <div>
-              <div>11147 Stockholm - 8 Nackstromsgatan - <strong>88.1%</strong></div>
-              <div>2202734 - 29/02/2020</div>
-            </div>
-            <div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar luctus placerat. 
-              Sed consectetur ex ipsum, eget semper nunc iaculis vitae. Aenean interdum egestas nisl, at dignissim ipsum vulputate eget.
+          <div class="image-gallery-modal-footer">
+            <div>11147 Stockholm - 8 Nackstromsgatan - <strong>88.1%</strong></div>
+            <div>2202734 - 29/02/2020</div>
           </div>
         </main>
-        <footer class="modal__footer">
-          <button class="modal__btn" data-micromodal-close>Cancel</button>
-          <button class="modal__btn modal__btn-primary">Export</button>
-        </footer>
       </div>
     </div>
   </div>

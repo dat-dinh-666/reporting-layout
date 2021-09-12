@@ -1,0 +1,24 @@
+#modal-image-gallery {
+  background: var(--bg-light);
+  color: var(--color-text-light);
+  line-height: 1.4;
+
+  .image-gallery-modal-header {
+    padding: 12px 0;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .image-gallery-modal-image {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .image-gallery-modal-footer {
+    text-align: center;
+    padding: 12px 0;
+  }
+}

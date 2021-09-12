@@ -1,0 +1,24 @@
+[data-tab-wrapper] {
+  [data-tab-content] {
+    display: none;
+
+    &[data-active] {
+      display: block;
+    }
+  }
+
+  [data-tab-header] {
+    display: flex;
+    justify-content: center;
+
+    [data-tab] {
+      padding: 8px 16px;
+      cursor: pointer;
+      border-bottom: 2px solid var(--color-border-trans);
+
+      &[data-active] {
+        border-bottom: 2px solid var(--color-border-light);
+      }
+    }
+  }
+}
