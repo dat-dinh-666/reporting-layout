@@ -160,8 +160,8 @@
             </div>
             <div class="period selectable-wrapper">
               <div class="label desktop-only">Timeframe</div>
-              <div class="select-like">
-                11/9 <i class="float-right fas fa-chevron-down"></i>
+              <div class="select-like" data-micromodal-trigger="modal-timeframe">
+                11/09 <i class="float-right fas fa-chevron-down"></i>
               </div>
             </div>
           </div>
@@ -4346,6 +4346,46 @@
             </div>
           </div>
         </main>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide modal__medium" id="modal-timeframe" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-timeframe-title">
+        <header class="modal__header">
+          <h2 class="modal__title" id="modal-timeframe-title">
+            <i class="fas fa-image mr-2"></i>
+            Timeframe
+          </h2>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header>
+        <main class="modal__content" id="modal-timeframe-content">
+          <div data-tab-wrapper>
+            <div data-tab-header  class="mb-4">
+              <div data-active data-tab data-tab-id="cycle">Cycle</div>
+              <div data-tab data-tab-id="date">Date</div>
+            </div>
+            <div class="content">
+              <div data-active data-tab-content data-tab-id="cycle">
+                <div class="selectable-wrapper">
+                  <select class="selectable">
+                    <option>02/19</option>
+                    <option>06/19</option>
+                    <option>02/20</option>
+                  </select>
+                </div>
+              </div>
+              <div data-tab-content data-tab-id="date">
+                <img src="assets/images/datepicker.png" width="400">
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn" data-micromodal-close>Cancel</button>
+          <button class="modal__btn modal__btn-primary">Apply</button>
+        </footer>
       </div>
     </div>
   </div>
