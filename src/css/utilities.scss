@@ -85,8 +85,8 @@
 table.table {
   color: var(--color-text-light);
   border-collapse: collapse;
-  width: calc(100% - 15px);
   overflow-x: auto;
+
   caption {
     margin: 16px 0;
     opacity: 0.6;

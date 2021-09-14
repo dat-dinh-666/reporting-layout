@@ -1,3 +1,7 @@
+html {
+  overflow: auto;
+}
+
 .layout {
   display: flex;
 }
@@ -10,6 +14,7 @@
 .main {
   order: 1;
   flex-basis: calc(100% - 210px);
+  width: calc(100% - 210px);
   padding: 15px;
   background: rgba(58, 67, 74, 0.03);
   section,
