@@ -20,9 +20,20 @@
 
   .logo {
     height: 100px;
+    position: relative;
+    p {
+      top: -4px;
+      left: 12px;
+      position: absolute;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      color: var(--color-text-light);
+    }
+
     img {
-      width: 100%;
-      height: 100%;
+      max-width: 100%;
     }
   }
 
@@ -39,6 +50,7 @@
         .sidebar__inner__item {
           @extend %base-sidebar-item-style;
           list-style: none;
+          padding: 0;
 
           a {
             transition: all 0.3s;
@@ -46,22 +58,25 @@
             color: var(--black);
             opacity: 0.6;
             font-size: 14px;
+            width: 100%;
+            display: inline-block;
+            padding: 8px 0px 8px 24px;
 
-            // FONT AWESOME
-            i {
-              width: 24px;
+            // Icons
+            img {
+              width: 20px;
+              height: 20px;
+              vertical-align: bottom;
             }
           }
 
-          &:hover {
-            background-color: var(--sidebar-active-color);
-            a {
-              opacity: 1;
-            }
-          }
-
+          &:hover,
           &--active {
             background-color: var(--sidebar-active-color);
+            img {
+              filter: brightness(0);
+            }
+
             a {
               opacity: 1;
             }
@@ -80,10 +95,10 @@
       background: transparent;
       font-weight: bold;
       color: var(--red-lighter);
-      span {
-        i {
-          width: 24px;
-        }
+      img {
+        width: 20px;
+        height: 20px;
+        vertical-align: bottom;
       }
     }
   }
@@ -196,7 +211,7 @@
                 }
               }
               a {
-                i {
+                img {
                   display: none;
                 }
               }
