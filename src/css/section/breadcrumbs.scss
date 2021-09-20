@@ -28,5 +28,12 @@
       margin-bottom: 0;
       background-color: var(--filter-bg-light) !important;
     }
+    .breadcrumbs-inner {
+      .period {
+        .select-like {
+          height: 100%;
+        }
+      }
+    }
   }
 }
