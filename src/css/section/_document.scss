@@ -42,6 +42,7 @@
         max-width: 550px;
         display: flex;
         padding-left: 8px;
+        margin-right: 0;
         .icon {
           flex-basis: 20px;
           display: grid;
@@ -128,6 +129,35 @@
 
     .box-full {
       margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint_md) {
+  #documents {
+    .box-teaser {
+      .documents-search {
+        .searchbox {
+          input[type="submit"] {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint_xl) {
+  #documents {
+    .box-teaser {
+      .documents-search {
+        .searchbox {
+          margin-right: 16px;
+          input[type="submit"] {
+            width: auto;
+          }
+        }
+      }
     }
   }
 }
