@@ -34,7 +34,7 @@
           border: solid 1px rgba(58, 67, 74, 0.4);
           background-color: rgba(58, 67, 74, 0.07);
           border-radius: 2px;
-
+          display: flex;
           i {
             position: absolute;
             opacity: 0.6;
@@ -113,22 +113,11 @@
   }
 }
 
-@media (max-width: $breakpoint_md) {
-  #checks {
-    .box-teaser {
-      display: block;
-
-      .checks-stats {
-        display: block;
-      }
-    }
-  }
-}
-
 @media (max-width: $breakpoint_sm) {
   #checks {
     .box-teaser {
       .checks-stats {
+        display: block;
         .chart {
           width: 50%;
           img {
@@ -151,6 +140,20 @@
               flex-grow: 2;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint_xl) {
+  #checks {
+    .box-teaser {
+      display: block;
+
+      .table-wrapper {
+        table {
+          width: 100%;
         }
       }
     }
