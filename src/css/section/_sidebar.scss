@@ -194,7 +194,7 @@
             .sidebar__inner__item {
               font-size: 16px;
               line-height: 1.5;
-              padding: 14px 12px;
+              padding: 8px 12px;
               position: relative;
               &:hover,
               &:focus,
@@ -203,7 +203,7 @@
                 &::after {
                   content: "";
                   display: block;
-                  height: 2px;
+                  height: 3px;
                   background-color: var(--color-text-light);
                   width: calc(100% - 24px);
                   position: absolute;
@@ -211,7 +211,9 @@
                 }
               }
               a {
-                img {
+                padding-left: 0;
+                img,
+                i {
                   display: none;
                 }
               }
